@@ -125,13 +125,16 @@
                     <td colspan="2">
                         <input type="submit" value="Submit" class="btnGeral" type="text">
                     </td>
-                    <td>
-                        <input class="inputData" type="text" name="dateArr" placeholder="YYYY-MM-DD" required />
+                    <td class="dateInfo">
+                        <label for="dateArr" id="labelDateInfo"> Arrival Date</label>
+                        <input class="inputData" type="text" name="dateArr" id="dateArr" placeholder="YYYY-MM-DD" required />
                     </td>
-                    <td>
+                    <td class="dateInfo">
+                        <label for="dateArr" id="labelDateInfo"> Service Date</label>
                         <input class="inputData" type="text" name="dateSer" placeholder="YYYY-MM-DD" required />
                     </td>
-                    <td>
+                    <td class="totalPrice">
+                        <label for="totalPrice" id="labeltotalPrice"> Service Date</label>
                         <input class="inputData" id="price" name="price" type="text" min="0.00" max="10000.00" step="0.01" placeholder="Price €:" />
                     </td>
                 </tr>
