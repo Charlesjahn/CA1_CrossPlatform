@@ -22,7 +22,7 @@ label {
 
 div {
     margin: 10px;
-    background-image: linear-gradient(to left, rgb(150, 150, 150), rgb(180, 180, 180), rgb(210, 210, 210));
+    background-image: linear-gradient(to left,  rgb(210, 210, 210), rgb(150, 150, 150), rgb(180, 180, 180));
     align-items: center;
     justify-content: center;
 }
@@ -30,7 +30,7 @@ div {
 form {
     margin: 1.5em;
     padding: 0.8em;
-    background-image: linear-gradient(to left, rgb(150, 150, 150), rgb(180, 180, 180), rgb(210, 210, 210));
+    background-image: linear-gradient(to left, rgb(210, 210, 210), rgb(150, 150, 150), rgb(180, 180, 180));
 }
 
 p,
@@ -56,7 +56,7 @@ input:focus {
     background-color: skyblue;
 }
 
-/*hide arrow on field input number*/
+/*hide arrow on field input phoneNumber*/
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
     -webkit-appearance: none;
@@ -124,15 +124,14 @@ option {
     background-color: dodgerblue;
     border: 1px solid blue;
 }
-
-/*css ids*/
-#price,
-#extrainfo {
+.inputData{
     padding: 0.5rem;
     font-weight: 600;
     min-width: 120px;
     max-width: 120px;
 }
+
+/*css ids*/
 
 #extrainfo {
     padding: 0.9rem;
