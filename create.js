@@ -44,15 +44,25 @@ htmlselect("flattyre", tyres);
 htmlselect("sizetyre", size);
 
 
+function dateArr() {
+  var today = new Date();
+  var dd = String(today.getDate()).padStart(2, '0');
+  var mm = String(today.getMonth() + 1).padStart(2, '0'); //January is 0!
+  var yyyy = today.getFullYear();
+  today = yyyy + '-' + dd + '-' + mm;
+  document.getElementById('dateArr').value = today;
+};
+dateArr();
+
 const electron = require("electron");
 const { ipcRenderer } = electron;
 const form = document.getElementById("form");
 const elements = {};
 form.addEventListener("submit", event => {
-    event.preventDefault();
-    for (let i = 0; i < form.elements.length; i++) {
-        if (form.elements[i].type !== "submit")
-            elements[form.elements[i].name] = form.elements[i].value;
-    }
-    ipcRenderer.send("servicesBikes:create", elements);
+  event.preventDefault();
+  for (let i = 0; i < form.elements.length; i++) {
+    if (form.elements[i].type !== "submit")
+      elements[form.elements[i].name] = form.elements[i].value;
+  }
+  ipcRenderer.send("servicesBikes:create", elements);
 });
