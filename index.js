@@ -32,7 +32,7 @@ app.on("ready", () => {
     const mainMenu = Menu.buildFromTemplate(menuTemplate);
     Menu.setApplicationMenu(mainMenu);
 });
-// creating new appoinment window
+// creating new booking window
 const createWindowCreator = () => {
     createWindow = new BrowserWindow({
         webPreferences: {
@@ -45,7 +45,7 @@ const createWindowCreator = () => {
     createWindow.loadURL(`file://${__dirname}/create.html`);
     createWindow.on("closed", () => (createWindow = null));
 };
-// creating all appoinment window
+// creating all Services window
 
 const listWindowCreator = () => {
     listWindow = new BrowserWindow({

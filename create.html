@@ -10,51 +10,50 @@
             <h3>Service Booking</h3>
             <table>
                 <tr>
-                    <td colspan="2">
+                    <td colspan="2" type="text">
                         <input type="text" class="input" name="name" id="name" placeholder="Full Name">
                     </td>
-                    <td colspan="2">
+                    <td colspan="2" type="text">
                         <input type="number" class="input" name="phoneNumber" id="phoneNumber"
                             placeholder="Phone Number">
                     </td>
 
                     <td id="serviceorder">
-                        <label for="">S.O.# </label>
-                        <h2 id="ordernumb">####</h2>
+                        <label for="serNumber" id="serNumber">S.O.# </label>
                     </td>
                 </tr>
                 <tr>
-                    <td colspan="2">
+                    <td colspan="2" type="text">
                         <input type="text" id="itembrand" class="input" name="itembrand" placeholder="Bike's Brand">
                     </td>
 
-                    <td colspan="2">
+                    <td colspan="2" type="text">
                         <input type="text" id="colouritem" class="input" name="colouritem" placeholder="Bike colour">
                     </td>
                     <td>
-                        <select name="model" class="select-items" id="model">
+                        <select name="model" class="select-items" id="model" type="text">
                             <option value="none" selected disabled hidden>Model</option>
                         </select>
                     </td>
                 </tr>
                 <tr>
                     <td>
-                        <select name="typeservice" class="select-items" id="typeservice">
+                        <select name="typeservice" class="select-items" id="typeservice" type="text">
                             <option value="none" selected disabled hidden>Service</option>
                         </select>
                     </td>
                     <td>
-                        <select name="typeBrakes" class="select-items" id="typeBrakes">
+                        <select name="typeBrakes" class="select-items" id="typeBrakes" type="text">
                             <option value="none" selected disabled hidden>Type of brakes</option>
                         </select>
                     </td>
                     <td>
-                        <select name="pads" class="select-items" id="pads" style="visibility: ">
+                        <select name="pads" class="select-items" id="pads" type="text">
                             <option value="none" selected disabled hidden>Pads to change</option>
                         </select>
                     </td>
                     <td>
-                        <select name="disc" class="select-items" id="disc" style="visibility: ">
+                        <select name="disc" class="select-items" id="disc" type="text">
                             <option value="none" selected disabled hidden>Disc size/type</option>
                         </select>
                     </td>
@@ -62,74 +61,75 @@
 
                 <tr>
                     <td>
-                        <select name="maketyres" class="select-items" id="maketyres">
+                        <select name="maketyres" class="select-items" id="maketyres" type="text">
                             <option value="none" selected disabled hidden>Make</option>
                         </select>
                     </td>
                     <td>
-                        <select name="flattyre" class="select-items" id="flattyre">
+                        <select name="flattyre" class="select-items" id="flattyre" type="text">
                             <option value="none" selected disabled hidden>Flat Tyre</option>
                         </select>
                     </td>
                     <td>
-                        <select name="sizetyre" class="select-items" id="sizetyre" style="visibility: ">
+                        <select name="sizetyre" class="select-items" id="sizetyre" type="text">
                             <option value="none" selected disabled hidden>Tyre's size</option>
                         </select>
                     </td>
                     <td>
-                        <select name="" class="select-items" id="" style="visibility: ">
+                        <select name="" class="select-items" id="" type="text">
                             <option value="none" selected disabled hidden>Empty</option>
                         </select>
                     </td>
                     <td>
-                        <select name="" class="select-items" id="" style="visibility: ">
+                        <select name="" class="select-items" id="" type="text">
                             <option value="none" selected disabled hidden>Empty</option>
                         </select>
                     </td>
                 </tr>
                 <tr>
                     <td>
-                        <select name="makeparts" class="select-items" id="makeparts">
+                        <select name="makeparts" class="select-items" id="makeparts" type="text">
                             <option value="none" selected disabled hidden>Make</option>
                         </select>
                     </td>
                     <td>
-                        <select name="chain" class="select-items" id="chain">
+                        <select name="chain" class="select-items" id="chain" type="text">
                             <option value="none" selected disabled hidden>Chain</option>
                         </select>
                     </td>
                     <td>
-                        <select name="cassette" class="select-items" id="cassette" style="visibility: ">
+                        <select name="cassette" class="select-items" id="cassette" type="text">
                             <option value="none" selected disabled hidden>Cassette</option>
                         </select>
                     </td>
                     <td>
-                        <select name="crankset" class="select-items" id="crankset" style="visibility: ">
+                        <select name="crankset" class="select-items" id="crankset" type="text">
                             <option value="none" selected disabled hidden>Crankset</option>
                         </select>
                     </td>
                 </tr>
                 <tr>
                     <td>
-                        <select name="eType" class="select-items" id="eType" style="visibility: ">
-                            <option value="none" selected>None</option>
+                        <select name="eType" class="select-items" id="eType" type="text">
+                            <option value="none" selected>E-Services</option>
                         </select>
                     </td>
                 </tr>
                 <tr>
                     <td colspan="4">
-                        <textarea name="extrainfo" class="input" id="extrainfo" placeholder="Extra info"></textarea>
+                        <textarea name="extrainfo" class="input" id="extrainfo" placeholder="Extra info" type="text"></textarea>
                     </td>
                 </tr>
 
                 <tr>
                     <td colspan="4">
-                        <input type="submit" value="Submit" class="btnGeral">
+                        <input type="submit" value="Submit" class="btnGeral" type="text">
                     </td>
                     <td>
                         <input id="price" type="number" min="0.00" max="10000.00" step="0.01" placeholder="Price €:" />
                     </td>
                 </tr>
+                
             </table>
             <!-- <li>
                     <label for="name">Name:</label><br />

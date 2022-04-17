@@ -51,7 +51,8 @@ input {
     max-width: 320px;
 }
 
-.input:hover {
+input:hover,
+input:focus {
     background-color: skyblue;
 }
 
@@ -76,7 +77,8 @@ select {
     max-width: 150px;
 }
 
-select:hover {
+select:hover,
+select:focus {
     background-color: skyblue;
     color: black;
 }
@@ -94,27 +96,6 @@ option {
 }
 
 /*css classes*/
-.inputField {
-    text-align: justify;
-    border: 0;
-    border-radius: 0.7em;
-    background-color: white;
-    margin: 0.3em;
-    padding: 0.5em;
-    min-width: 200px;
-    min-height: 30px;
-    max-width: 200px;
-    max-height: 300px;
-    text-size-adjust: 20px;
-
-}
-
-.inputField:hover,
-.inputField:focus {
-    background-color: gainsboro;
-    border: 1px solid black;
-}
-
 .divAppoit {
     margin: 5em;
     margin: 2.2em;
@@ -145,8 +126,23 @@ option {
 }
 
 /*css ids*/
+#price,
+#extrainfo {
+    padding: 0.5rem;
+    font-weight: 600;
+    min-width: 120px;
+    max-width: 120px;
+}
+
+#extrainfo {
+    padding: 0.9rem;
+    font-weight: 600;
+    min-width: 650px;
+    max-width: 650px;
+}
+
 #listBtn {
-    display: flex;
+    display: relative;
     justify-content: center;
     align-items: center;
 }
@@ -156,7 +152,7 @@ option {
     height: 50px;
     background-color: black;
     border-radius: 50px;
-    position: absolute;
+    position: relative;
     padding: .31em;
     right: 0%;
     top: 0%;
