@@ -83,7 +83,7 @@ ipcMain.on("servicesBikes:done", (event, id) => {
 const sendTodayServices = () => {
     const today = new Date().toISOString().slice(0, 10);
     const filtered = allServices.filter(
-        servicesBikes => servicesBikes.date === today
+        servicesBikes => servicesBikes.dateSer === today
     );
     todayWindow.webContents.send("servicesBikes:response:today", filtered);
 };
