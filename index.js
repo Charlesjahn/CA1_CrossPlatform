@@ -38,8 +38,8 @@ const createWindowCreator = () => {
         webPreferences: {
             nodeIntegration: true
         },
-        min_width: 500,
-        min_height: 650,
+        min_width: 650,
+        min_height: 800,
         title: "Booking New Service "
     }); createWindow.setMenu(null);
     createWindow.loadURL(`file://${__dirname}/create.html`);
