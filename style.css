@@ -22,7 +22,7 @@ label {
 
 div {
     margin: 10px;
-    background-image: linear-gradient(to left,  rgb(210, 210, 210), rgb(150, 150, 150), rgb(180, 180, 180));
+    background-image: linear-gradient(to left, rgb(210, 210, 210), rgb(150, 150, 150), rgb(180, 180, 180));
     align-items: center;
     justify-content: center;
 }
@@ -124,11 +124,17 @@ option {
     background-color: dodgerblue;
     border: 1px solid blue;
 }
-.inputData{
+
+.inputData {
     padding: 0.5rem;
     font-weight: 600;
     min-width: 120px;
     max-width: 120px;
+}
+
+.dateInfo, .totalPrice {
+    position: relative;
+    text-align: center;
 }
 
 /*css ids*/
@@ -169,6 +175,12 @@ option {
 
 #serviceorder {
     text-align: right;
+}
+
+#labelDateInfo,
+#labelTotalPrice {
+    background-color: transparent;
+    font-weight: 600;
 }
 
 /* CSS for tests */
