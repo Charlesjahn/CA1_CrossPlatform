@@ -19,7 +19,9 @@
                     </td>
 
                     <td id="serviceorder">
-                        <label for="serNumber" id="serNumber" type="text">S.O.# </label>
+                        <!-- <label for="serNumber" id="" type="text">S.O.# </label> -->
+                        <input type="text" name="serviceOrder" id="serNumber" class="inputField" disabled>
+
                     </td>
                 </tr>
                 <tr>
@@ -177,7 +179,7 @@
                         <input class="inputData" type="text" name="dateSer" placeholder="YYYY-MM-DD" required />
                     </td>
                     <td class="totalPrice">
-                        <label for="totalPrice" id="labeltotalPrice"> Service Date</label>
+                        <label for="totalPrice" id="labeltotalPrice"> Total Price</label>
                         <input class="inputData" id="price" name="price" type="text" min="0.00" max="10000.00"
                             step="0.01" placeholder="Price €:" />
                     </td>
