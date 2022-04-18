@@ -84,12 +84,12 @@ form.addEventListener("submit", event => {
 
 function serOrderNum() {
   var localDate = new Date();
-  var year = String(localDate.getFullYear());
+  var year = String(localDate.getYear());
   var mouth = String(localDate.getMonth() + 1).padStart(2, '0');
   var day = String(localDate.getDate()).padStart(2, '0');
   var hour = String(localDate.getHours()).padStart(2, '0');
   var min = String(localDate.getMinutes()).padStart(2, '0');
   var sec = String(localDate.getSeconds()).padStart(2, '0');
-  var serOrdNumb = year+mouth+day+hour+min+sec;
-  const labelSerOrNum = document.getElementById("serNumber").innerText = serOrdNumb;
+  var serOrdNumb = year+mouth+day+"."+hour+min+sec;
+  document.getElementById("serNumber").value = serOrdNumb;
 }
