@@ -22,7 +22,6 @@ label {
 
 div {
     margin: 10px;
-    background-image: linear-gradient(to left, rgb(210, 210, 210), rgb(150, 150, 150), rgb(180, 180, 180));
     align-items: center;
     justify-content: center;
 }
@@ -181,6 +180,14 @@ option {
 #labelTotalPrice {
     background-color: transparent;
     font-weight: 600;
+}
+#serviceDiv{
+    min-width: 200px;
+    min-height: 10px;
+    max-width:max-content;
+    max-height:max-content;
+    padding: 0.9rem;
+    background-color: white;
 }
 
 /* CSS for tests */
