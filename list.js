@@ -6,6 +6,8 @@ ipcRenderer.on("servicesBikes:response:list", (event, servicesBikesX) => {
     servicesBikesX.forEach(servicesBikes => {
         const servicesBikesDiv = document.createElement("div");
         servicesBikesDiv.className = "divAppoit"
+        const sONParagraph = document.createElement("p");
+        sONParagraph.innerHTML = `Service Order number: ${servicesBikes.serviceOrder}`;
         const nameParagraph = document.createElement("p");
         nameParagraph.innerHTML = `Name: ${servicesBikes.name}`;
         const phoneNumber = document.createElement("p");
@@ -22,6 +24,7 @@ ipcRenderer.on("servicesBikes:response:list", (event, servicesBikesX) => {
         servicesDiv.innerHTML = `Services To Do: ${servicesBikes.toDo}`;
         const doneParagraph = document.createElement("p");
         doneParagraph.innerHTML = `Done: ${servicesBikes.done ? "Yes" : "No"}`;
+        servicesBikesDiv.appendChild(sONParagraph);
         servicesBikesDiv.appendChild(nameParagraph);
         servicesBikesDiv.appendChild(phoneNumber);
         servicesBikesDiv.appendChild(dateArrParagraph);
