@@ -16,9 +16,21 @@ ipcRenderer.on("servicesBikes:response:today", (event, servicesBikesX) => {
         const dateSerParagraph = document.createElement("p");
         dateSerParagraph.innerHTML = `Service Date: ${servicesBikes.dateSer}`;
         const priceParagraph = document.createElement("p");
-        priceParagraph.innerHTML = `Price: €${servicesBikes.price}`;
+        priceParagraph.innerHTML = `Price: &euro;${servicesBikes.price}`;
         const extrainfoParagraph = document.createElement("p");
         extrainfoParagraph.innerHTML = `Extra Info: ${servicesBikes.extrainfo}`;
+
+        // tesing
+
+        // const servicesDiv = document.createElement("div");
+        // servicesDiv.id = "serviceDiv";
+        // servicesLU.innerHTML = `Services To Do: ${servicesBikes.toDo.forEach(item => {
+        //     const itemList = document.createElement("li")
+        //     itemList.innerHTML = `${servicesBikes.toDo.item}`
+        //     servicesLU.appendChild(itemList);
+        // })}`;
+
+        // servicesDiv.appendChild(servicesLU);
         const doneParagraph = document.createElement("p");
         doneParagraph.innerHTML = `Done: ${servicesBikes.done ? "Yes" : "No"}`;
         const doneButton = document.createElement("button");
@@ -33,6 +45,7 @@ ipcRenderer.on("servicesBikes:response:today", (event, servicesBikesX) => {
         servicesBikesDiv.appendChild(doneParagraph);
         servicesBikesDiv.appendChild(priceParagraph);
         servicesBikesDiv.appendChild(extrainfoParagraph);
+        // servicesBikesDiv.appendChild(servicesDiv);
         servicesBikesDiv.appendChild(doneButton);
         listDiv.append(servicesBikesDiv);
     });
