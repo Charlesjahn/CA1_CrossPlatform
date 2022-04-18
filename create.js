@@ -49,10 +49,16 @@ function dateArr() {
   var dd = String(today.getDate()).padStart(2, '0');
   var mm = String(today.getMonth() + 1).padStart(2, '0'); //January is 0!
   var yyyy = today.getFullYear();
-  today = yyyy + '-' + dd + '-' + mm;
+  today = yyyy + '-' + mm + '-' + dd;
   document.getElementById('dateArr').value = today;
 };
 dateArr();
+
+function pickOption(idSelect, idOption) {
+  let select = document.getElementById(idSelect);
+  let value = select.options[select.selectedIndex].value;
+  console.log(value)
+};
 
 const electron = require("electron");
 const { ipcRenderer } = electron;
@@ -64,5 +70,8 @@ form.addEventListener("submit", event => {
     if (form.elements[i].type !== "submit")
       elements[form.elements[i].name] = form.elements[i].value;
   }
+  let select = document.getElementById(idSelect);
+  let value = select.options[select.selectedIndex].value;
+  console.log(value)
   ipcRenderer.send("servicesBikes:create", elements);
 });
