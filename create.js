@@ -70,8 +70,10 @@ form.addEventListener("submit", event => {
     if (form.elements[i].type !== "submit")
       elements[form.elements[i].name] = form.elements[i].value;
   }
+  
   let select = document.getElementById(idSelect);
   let value = select.options[select.selectedIndex].value;
   console.log(value)
+
   ipcRenderer.send("servicesBikes:create", elements);
 });
