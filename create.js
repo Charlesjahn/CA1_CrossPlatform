@@ -1,4 +1,4 @@
-let itens = ['Speed', 'Cross country', 'Gravel', 'Full Suspension', 'Hard Tail', 'City', 'Fixie', 'Hybrid', 'BMX', 'Kid', 'Other', 'E-Bike', 'E-Scooter'];
+let items = ['Speed', 'Cross country', 'Gravel', 'Full Suspension', 'Hard Tail', 'City', 'Fixie', 'Hybrid', 'BMX', 'Kid', 'Other', 'E-Bike', 'E-Scooter'];
 
 let services = ["None", "Basic service €20", "Full Service €35", "Special Service €50"];
 
@@ -19,6 +19,9 @@ let crankset = ["None", "28/38/48", "28/36", "34", "34/50", "36/50", "36/52", "3
 let tyres = ["None", "Front Tyre", "Back Tyre", "Front Tube", "Back Tube", "F. Tyre & Tube", "B. Tyre & Tube", "F. & B. Tube", "F. & B. Tyre", "F.B. Tyre & Tube"];
 let size = ['8"', '10"', '12"', '14"', '16"', '18"', '20"', '24"', '26"x1-1/4', '26"x1-3/8', '27"x 1-1/4', '27.5"', '28"x1-1/4', '28"x1-3/8', '29"', '700'];
 
+let bottomBracket = ["None", "Service", "New Square", "New HollowTech", "New PressFit"];
+let headSet = ["None", "Service", "Bearings", "New Integrated ", "Sealed bearings"];
+
 function htmlselect(idlocal, item) {
   let x = document.getElementById(idlocal);
   for (let i = 0; i < item.length; i++) {
@@ -29,7 +32,8 @@ function htmlselect(idlocal, item) {
   }
 };
 
-htmlselect("model", itens);
+serOrderNum();
+htmlselect("model", items);
 htmlselect("typeservice", services);
 htmlselect("eType", eproblem);
 htmlselect("typeBrakes", brakeType);
@@ -42,6 +46,11 @@ htmlselect("makeparts", makeparts);
 htmlselect("maketyres", maketyres);
 htmlselect("flattyre", tyres);
 htmlselect("sizetyre", size);
+htmlselect("makewheels", makeparts);
+htmlselect("sizewheel", size);
+htmlselect("typeBrakeWheel", brakeType);
+htmlselect("bottomBracket", bottomBracket);
+htmlselect("headSet", headSet);
 
 
 function dateArr() {
@@ -70,10 +79,17 @@ form.addEventListener("submit", event => {
     if (form.elements[i].type !== "submit")
       elements[form.elements[i].name] = form.elements[i].value;
   }
-  
-  let select = document.getElementById(idSelect);
-  let value = select.options[select.selectedIndex].value;
-  console.log(value)
-
   ipcRenderer.send("servicesBikes:create", elements);
 });
+
+function serOrderNum() {
+  var localDate = new Date();
+  var year = String(localDate.getFullYear());
+  var mouth = String(localDate.getMonth() + 1).padStart(2, '0');
+  var day = String(localDate.getDate()).padStart(2, '0');
+  var hour = String(localDate.getHours()).padStart(2, '0');
+  var min = String(localDate.getMinutes()).padStart(2, '0');
+  var sec = String(localDate.getSeconds()).padStart(2, '0');
+  var serOrdNumb = year+mouth+day+hour+min+sec;
+  const labelSerOrNum = document.getElementById("serNumber").innerText = serOrdNumb;
+}
