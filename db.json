@@ -61,17 +61,20 @@
     },
     {
         "dateArr": "2022-03-26",
-        "dateSer": "2022-04-14",
+        "dateSer": "2022-04-18",
         "name": "Jan",
         "phoneNumber": "7867839",
         "price": "22.45",
         "extrainfo": "Covid",
         "id": "5392ec21-dc25-465d-80b2-e017fa8fad21",
-        "done": 0
+        "done": 0,
+        "toDo": {
+            "service": "Special Service"
+        }
     },
     {
         "dateArr": "2022-03-26",
-        "dateSer": "2022-04-14",
+        "dateSer": "2022-04-18",
         "name": "John",
         "phoneNumber": "12345",
         "price": "22.45",
