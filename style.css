@@ -18,10 +18,6 @@ label {
     align-items: center;
     justify-content: center;
 }
-#serNumber {
-    font-weight: 500;
-    font-size: large;
-}
 
 div {
     margin: 10px;
@@ -99,14 +95,15 @@ option {
 
 /*css classes*/
 .divAppoit {
+    overflow:auto;
     margin: 5em;
     margin: 2.2em;
     padding: 0.5em;
-    min-width: 200px;
-    min-height: min-content;
-    max-width: max-content;
-    max-height: max-content;
-    background-color: silver;
+    min-width: 600px;
+    min-height: 200px;
+    max-width: 600px;
+    max-height: 200px;
+    background-image: linear-gradient(to left, rgb(210, 210, 210), rgb(150, 150, 150), rgb(180, 180, 180));
 }
 
 .btnGeral {
@@ -191,6 +188,13 @@ option {
     max-height:max-content;
     padding: 0.9rem;
     background-color: white;
+}
+#serNumber {
+    color: black;
+    padding: .6rem;
+    font-size: medium;
+    min-width: 150px;
+    max-width: 150px;
 }
 
 /* CSS for tests */
