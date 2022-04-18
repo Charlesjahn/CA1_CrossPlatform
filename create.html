@@ -7,7 +7,7 @@
 <body>
     <div id="divForm">
         <form id="form">
-            <h3>Service Booking</h3>
+            <h2>Service Booking</h2>
             <table>
                 <tr>
                     <td colspan="2" type="text">
@@ -19,7 +19,7 @@
                     </td>
 
                     <td id="serviceorder">
-                        <label for="serNumber" id="serNumber">S.O.# </label>
+                        <label for="serNumber" id="serNumber" type="text">S.O.# </label>
                     </td>
                 </tr>
                 <tr>
@@ -63,42 +63,11 @@
                         </select>
                     </td>
                 </tr>
-
-                <tr>
-                    <td>
-                        <select name="maketyres" class="select-items" id="maketyres" type="text"
-                            onclick="pickOption('maketyres')">
-                            <option value="none" selected disabled hidden>Make</option>
-                        </select>
-                    </td>
-                    <td>
-                        <select name="flattyre" class="select-items" id="flattyre" type="text"
-                            onclick="pickOption('flattyre')">
-                            <option value="none" selected disabled hidden>Flat Tyre</option>
-                        </select>
-                    </td>
-                    <td>
-                        <select name="sizetyre" class="select-items" id="sizetyre" type="text"
-                            onclick="pickOption('sizetyre')">
-                            <option value="none" selected disabled hidden>Tyre's size</option>
-                        </select>
-                    </td>
-                    <td>
-                        <select name="" class="select-items" id="" type="text" onclick="pickOption()">
-                            <option value="none" selected disabled hidden>Empty</option>
-                        </select>
-                    </td>
-                    <td>
-                        <select name="" class="select-items" id="" type="text" onclick="pickOption()">
-                            <option value="none" selected disabled hidden>Empty</option>
-                        </select>
-                    </td>
-                </tr>
                 <tr>
                     <td>
                         <select name="makeparts" class="select-items" id="makeparts" type="text"
                             onclick="pickOption('makeparts')">
-                            <option value="none" selected disabled hidden>Make</option>
+                            <option value="none" selected disabled hidden>Part's Brand</option>
                         </select>
                     </td>
                     <td>
@@ -119,6 +88,67 @@
                         </select>
                     </td>
                 </tr>
+                <tr>
+                    <td>
+                        <select name="maketyres" class="select-items" id="maketyres" type="text"
+                            onclick="pickOption('maketyres')">
+                            <option value="none" selected disabled hidden>Tyre's Brand</option>
+                        </select>
+                    </td>
+                    <td>
+                        <select name="flattyre" class="select-items" id="flattyre" type="text"
+                            onclick="pickOption('flattyre')">
+                            <option value="none" selected disabled hidden>Flat Tyre</option>
+                        </select>
+                    </td>
+                    <td>
+                        <select name="sizetyre" class="select-items" id="sizetyre" type="text"
+                            onclick="pickOption('sizetyre')">
+                            <option value="none" selected disabled hidden>Tyre's size</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <select name="makewheels" class="select-items" id="makewheels" type="text"
+                            onclick="pickOption('makewheels')">
+                            <option value="none" selected disabled hidden>Wheel's Brand</option>
+                        </select>
+                    </td>
+                    <td>
+                        <select name="sizewheel" class="select-items" id="sizewheel" type="text"
+                            onclick="pickOption('sizewheel')">
+                            <option value="none" selected disabled hidden>Wheel's Size</option>
+                        </select>
+                    </td>
+                    <td>
+                        <select name="typeBrakeWheel" class="select-items" id="typeBrakeWheel" type="text"
+                            onclick="pickOption('typeBrakeWheel')">
+                            <option value="none" selected disabled hidden>Brake's type</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <select name="headSet" class="select-items" id="headSet" type="text"
+                            onclick="pickOption('headSet')">
+                            <option value="none" selected disabled hidden>Head Set</option>
+                        </select>
+                    </td>
+                    <td>
+                        <select name="bottomBracket" class="select-items" id="bottomBracket" type="text"
+                            onclick="pickOption('bottomBracket')">
+                            <option value="none" selected disabled hidden>Bottom Bracket</option>
+                        </select>
+                    </td>
+                    <!-- <td>
+                        <select name="typeBrakeWheel" class="select-items" id="typeBrakeWheel" type="text"
+                            onclick="pickOption('typeBrakeWheel')">
+                            <option value="none" selected disabled hidden>Brake's type</option>
+                        </select>
+                    </td> -->
+                </tr>
+
                 <tr>
                     <td>
                         <select name="eType" class="select-items" id="eType" type="text" onclick="pickOption('eType')">
