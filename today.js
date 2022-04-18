@@ -20,7 +20,7 @@ ipcRenderer.on("servicesBikes:response:today", (event, servicesBikesX) => {
         const extrainfoParagraph = document.createElement("p");
         extrainfoParagraph.innerHTML = `Extra Info: ${servicesBikes.extrainfo}`;
 
-        // tesing
+        // testing
 
         // const servicesDiv = document.createElement("div");
         // servicesDiv.id = "serviceDiv";
