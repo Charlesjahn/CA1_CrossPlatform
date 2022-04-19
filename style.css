@@ -125,9 +125,11 @@ option {
 
 .inputData {
     padding: 0.5rem;
-    font-weight: 600;
+    font-weight: 530;
+    font-size: medium;
     min-width: 120px;
     max-width: 120px;
+    text-align: center;
 }
 
 .dateInfo, .totalPrice {
@@ -194,6 +196,7 @@ option {
     font-size: medium;
     min-width: 150px;
     max-width: 150px;
+    text-align: center;
 }
 
 /* CSS for tests */
