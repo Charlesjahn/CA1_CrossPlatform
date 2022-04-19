@@ -9,7 +9,7 @@ body {
     width: 100%;
     height: 100%;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    background-image: linear-gradient(to left, rgb(250, 126, 233), rgb(0, 47, 255), rgb(0, 0, 0));
+    background-image: linear-gradient(to left, rgb(250, 126, 219), rgb(0, 47, 255), rgb(0, 0, 0));
 }
 label {
     background-color: white;
@@ -115,10 +115,14 @@ select::-ms-expand {
     max-height: 30px;
 }
 
-.btnGeral:hover,
 .btnGeral:focus {
     background-color: dodgerblue;
     border: 1px solid blue;
+}
+.btnGeral:hover {
+    background-color: dodgerblue;
+    border: 1px solid blue;
+    cursor: pointer;
 }
 
 .inputData {
@@ -195,14 +199,15 @@ select::-ms-expand {
     min-width: 150px;
     max-width: 150px;
     text-align: center;
+    cursor: not-allowed;
 }
 
 /* CSS for tests */
-table {
+/* table {
     border-collapse: collapse;
     border: 1px solid #FF0000;
 }
 
 table td {
     border: 1px solid #FF0000;
-}
+} */
