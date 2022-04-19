@@ -44,9 +44,8 @@ h2 {
 input {
     color: black;
     padding: .6rem;
-    font-weight: 450;
-    min-width: 320px;
-    max-width: 320px;
+    min-width: 280px;
+    max-width: 280px;
 }
 
 input:hover,
@@ -71,8 +70,8 @@ select {
     font: inherit;
     text-align: center;
     justify-content: center;
-    min-width: 150px;
-    max-width: 150px;
+    min-width: 125px;
+    max-width: 125px;
 }
 
 select:hover,
@@ -141,8 +140,8 @@ option {
 #extrainfo {
     padding: 0.9rem;
     font-weight: 600;
-    min-width: 650px;
-    max-width: 650px;
+    min-width: 570px;
+    max-width: 570px;
 }
 
 #listBtn {
@@ -176,7 +175,7 @@ option {
     text-align: right;
 }
 
-#labelDateInfo,
+#labelInfo,
 #labelTotalPrice {
     background-color: transparent;
     font-weight: 600;
