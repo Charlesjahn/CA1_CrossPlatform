@@ -1,6 +1,6 @@
 let items = ['Speed', 'Cross country', 'Gravel', 'Full Suspension', 'Hard Tail', 'City', 'Fixie', 'Hybrid', 'BMX', 'Kid', 'Other', 'E-Bike', 'E-Scooter'];
 
-let services = ["None", "Basic service €20", "Full Service €35", "Special Service €50"];
+let services = ["None", "Basic service", "Full Service", "Special Service"];
 
 let eproblem = ["Dead Battery", "Motor Failed", "Display off", "Not charging", "Pedal Assistant", "Throttle"];
 
