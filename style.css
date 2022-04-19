@@ -89,9 +89,6 @@ select::-ms-expand {
     display: none;
 }
 
-option {
-    background-color: rgb(210, 250, 240);
-}
 
 /*css classes*/
 .divAppoit {
