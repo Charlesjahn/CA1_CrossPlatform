@@ -4,7 +4,7 @@
         "dateSer": "2022-03-26",
         "name": "Peter Sharon",
         "phoneNumber": "003537000000",
-        "hour": "22.22",
+        "price": "22.22",
         "extrainfo": "",
         "id": "87e1b0d3-faa8-43c1-9159-e46df4bc1048",
         "done": 1
@@ -79,6 +79,7 @@
         "phoneNumber": "12345",
         "price": "22.45",
         "extrainfo": "lol",
+        "id": "bc1dbdfsa3db-da29-416b-8b5ezcxcxv48b767f",
         "done": 0
     },
     {
