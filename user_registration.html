@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h3>Create a new user account</h3>
+    <form id="createNewUserForm">
+        <label for="firstname">Firstname:</label><br />
+        <input type="text" firstname="firstname" required />
+        <br /><br />
+        <label for="surname">Surname:</label><br />
+        <input type="text" surname="surname" required />
+        <br /><br />
+        <label for="number">Phone Number:</label><br />
+        <input type="tel" name="number" required />
+        <br /><br />
+        <input type="submit" />
+    </form>
+    <script>
+        const electron = require("electron");
+        const { ipcRenderer } = electron;
+        const newUserForm = document.getElementById("createNewUserForm");
+        const elements = {};
+        newUserForm.addEventListener("submit", event => {
+            event.preventDefault();
+            for (let i = 0; i < newUserForm.elements.length; i++) {
+                if (newUserForm.elements[i].type !== "submit")
+                    elements[newUserForm.elements[i].name] = newUserForm.elements[i].value;
+            }
+            ipcRenderer.send("user:createNewUser", elements);
+        });
+    </script>
+</body>
+
+</html>

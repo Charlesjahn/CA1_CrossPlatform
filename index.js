@@ -6,6 +6,8 @@ let todayWindow;
 let createWindow;
 let listWindow;
 let allServices = [];
+let allUsers = [];
+
 fs.readFile("db.json", (err, jsonServices) => {
     if (!err) {
         const oldServices = JSON.parse(jsonServices);
@@ -45,6 +47,43 @@ const createWindowCreator = () => {
     createWindow.loadURL(`file://${__dirname}/create.html`);
     createWindow.on("closed", () => (createWindow = null));
 };
+// creating new user account @Bekezhan
+const createUserCreator = () => {
+    createWindow = new BrowserWindow({
+        webPreferences: {
+            nodeIntegration: true
+        },
+        min_width: 1000,
+        min_height: 1000,
+        title: "Creating New User"
+    }); 
+    createWindow.setMenu(null);
+    createWindow.loadURL(`file://${__dirname}/user_registration.html`);
+    createWindow.on("closed", () => (createWindow = null));
+};
+
+ipcMain.on("user:createNewUser", (event, newUserAccountForm) => {
+    newUserAccountForm["id"] = uuid();
+    newUserAccountForm["done"] = 0;
+    allUsers.push(newUserAccountForm);
+    createWindow.close();
+});
+
+ipcMain.on("user:request:listOfAllUsers", event => {
+    listWindow.webContents.send("user:response:listOfAllUsers", allUsers);
+});
+
+fs.readFile("./users_db.json", (err, jsonAllUsers) => {
+    if (!err) {
+        const oldUsers = JSON.parse(jsonAllUsers);
+        jsonAllUsers = oldUsers;
+    }
+});
+const jsonAllUsers = JSON.stringify(allUsers);
+fs.writeFileSync("./users_db.json", jsonAllUsers);
+
+
+
 // creating all Services window
 
 const listWindowCreator = () => {
@@ -101,6 +140,12 @@ const menuTemplate = [
                 label: "All Services",
                 click() {
                     listWindowCreator();
+                }
+            },
+            {
+                label: "Create User",
+                click() {
+                    createUserCreator();
                 }
             },
             {
