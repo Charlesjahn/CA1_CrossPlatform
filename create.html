@@ -7,29 +7,33 @@
 <body>
     <div id="divForm">
         <form id="form">
-            <h2>Service Booking</h2>
+
             <table>
                 <tr>
-                    <td colspan="2" type="text">
-                        <input type="text" class="inputField" name="name" id="name" placeholder="Full Name" required>
+                    <td colspan="2">
+                        <h2>Service Booking</h2>
                     </td>
-                    <td colspan="2" type="text">
-                        <input type="number" class="inputField" name="phoneNumber" id="phoneNumber"
-                            placeholder="Phone Number" type="text" required>
-                    </td>
-
-                    <td id="serviceorder">
+                    <td colspan="3" style="text-align: right;">
+                        <label for="dateArr" id="labelInfo"> Service Order</label>
                         <input type="text" name="serviceOrder" id="serNumber" class="inputField" disabled>
-
                     </td>
                 </tr>
                 <tr>
-                    <td colspan="2" type="text">
+                    <td colspan="2">
+                        <input type="text" class="inputField" name="name" id="name" placeholder="Full Name" required>
+                    </td>
+                    <td colspan="2">
+                        <input type="number" class="inputField" name="phoneNumber" id="phoneNumber"
+                            placeholder="Phone Number" type="text" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
                         <input type="text" id="itembrand" class="inputField" name="itembrand" placeholder="Bike's Brand"
                             required>
                     </td>
 
-                    <td colspan="2" type="text">
+                    <td colspan="2">
                         <input type="text" id="colouritem" class="inputField" name="colouritem"
                             placeholder="Bike colour" required>
                     </td>
@@ -169,12 +173,12 @@
                         <input type="submit" value="Submit" class="btnGeral" type="text">
                     </td>
                     <td class="dateInfo">
-                        <label for="dateArr" id="labelDateInfo"> Arrival Date</label>
+                        <label for="dateArr" id="labelInfo"> Arrival Date</label>
                         <input class="inputData" type="text" name="dateArr" id="dateArr" placeholder="YYYY-MM-DD"
                             required />
                     </td>
                     <td class="dateInfo">
-                        <label for="dateArr" id="labelDateInfo"> Service Date</label>
+                        <label for="dateArr" id="labelInfo"> Service Date</label>
                         <input class="inputData" type="text" name="dateSer" placeholder="YYYY-MM-DD" required />
                     </td>
                     <td class="totalPrice">
