@@ -19,20 +19,30 @@ ipcRenderer.on("servicesBikes:response:today", (event, servicesBikesX) => {
         dateSerParagraph.innerHTML = `Service Date: ${servicesBikes.dateSer}`;
         const priceParagraph = document.createElement("p");
         priceParagraph.innerHTML = `Price: &euro;${servicesBikes.price}`;
+
         const extrainfoParagraph = document.createElement("p");
         extrainfoParagraph.innerHTML = `Extra Info: ${servicesBikes.extrainfo}`;
 
         // testing
+        const servicesDiv = document.createElement("div");
+        servicesDiv.id = "serviceDiv";
+        const servicesh3 = document.createElement("h3");
+        servicesh3.innerHTML = `Services To Do: `;
+        servicesDiv.appendChild(servicesh3);
 
-        // const servicesDiv = document.createElement("div");
-        // servicesDiv.id = "serviceDiv";
-        // servicesLU.innerHTML = `Services To Do: ${servicesBikes.toDo.forEach(item => {
-        //     const itemList = document.createElement("li")
-        //     itemList.innerHTML = `${servicesBikes.toDo.item}`
-        //     servicesLU.appendChild(itemList);
-        // })}`;
 
-        // servicesDiv.appendChild(servicesLU);
+        const inputCheckBox = document.createElement("input");
+        inputCheckBox.type = "checkbox";
+        inputCheckBox.value = "test"
+        inputCheckBox.id ="inputCheckBox"
+        const labelCheckBox = document.createElement("label");
+        labelCheckBox.for = "test";
+        labelCheckBox.innerText = "test";
+
+
+        servicesDiv.appendChild(inputCheckBox);
+        servicesDiv.appendChild(labelCheckBox);
+
         const doneParagraph = document.createElement("p");
         doneParagraph.innerHTML = `Done: ${servicesBikes.done ? "Yes" : "No"}`;
         const doneButton = document.createElement("button");
@@ -48,8 +58,7 @@ ipcRenderer.on("servicesBikes:response:today", (event, servicesBikesX) => {
         servicesBikesDiv.appendChild(doneParagraph);
         servicesBikesDiv.appendChild(priceParagraph);
         servicesBikesDiv.appendChild(extrainfoParagraph);
-        // servicesBikesDiv.appendChild(servicesDiv);
-        
+        servicesBikesDiv.appendChild(servicesDiv);
         servicesBikesDiv.appendChild(doneParagraph);
         servicesBikesDiv.appendChild(doneButton);
         listDiv.append(servicesBikesDiv);
