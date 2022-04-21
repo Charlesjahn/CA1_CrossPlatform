@@ -30,18 +30,23 @@ ipcRenderer.on("servicesBikes:response:today", (event, servicesBikesX) => {
         servicesh3.innerHTML = `Services To Do: `;
         servicesDiv.appendChild(servicesh3);
 
+        // servicesBikes.toDo;
 
-        const inputCheckBox = document.createElement("input");
-        inputCheckBox.type = "checkbox";
-        inputCheckBox.value = "test"
-        inputCheckBox.id = "inputCheckBox"
-        const labelCheckBox = document.createElement("label");
-        labelCheckBox.for = "test";
-        labelCheckBox.innerText = "test";
+        // var x = 0;
+        // while (servicesBikes.forEach) {
+        //     const inputCheckBox = document.createElement("input");
+        //     inputCheckBox.type = "checkbox";
+        //     inputCheckBox.value = "test"
+        //     inputCheckBox.id = "inputCheckBox"
+        //     const labelCheckBox = document.createElement("label");
+        //     labelCheckBox.for = "test";
+        //     labelCheckBox.innerText = `${servicesBikes.toDo[x]}`;
 
 
-        servicesDiv.appendChild(inputCheckBox);
-        servicesDiv.appendChild(labelCheckBox);
+        //     servicesDiv.appendChild(inputCheckBox);
+        //     servicesDiv.appendChild(labelCheckBox);
+        //     x++;
+        // }
 
         const doneParagraph = document.createElement("p");
         doneParagraph.innerHTML = `Done: ${servicesBikes.done ? "Yes" : "No"}`;
