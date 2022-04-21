@@ -63,23 +63,22 @@ function dateArr() {
 };
 dateArr();
 
-function pickOption(idSelect, idOption) {
-  let select = document.getElementById(idSelect);
-  let value = select.options[select.selectedIndex].value;
-  console.log(value)
-};
-
 const electron = require("electron");
 const { ipcRenderer } = electron;
 const form = document.getElementById("form");
 const elements = {};
+const subElements = {};
 form.addEventListener("submit", event => {
   event.preventDefault();
   for (let i = 0; i < form.elements.length; i++) {
-    if (form.elements[i].type !== "submit")
+    if (form.elements[i].type !== "submit") {
       if (form.elements[i].value !== "none") {
         elements[form.elements[i].name] = form.elements[i].value;
       }
+    }
+
+    
+    elements["toDo"] = subElements;
   }
   ipcRenderer.send("servicesBikes:create", elements);
 });
