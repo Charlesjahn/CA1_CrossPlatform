@@ -22,6 +22,9 @@ let size = ['8"', '10"', '12"', '14"', '16"', '18"', '20"', '24"', '26"x1-1/4', 
 let bottomBracket = ["None", "Service", "New Square", "New HollowTech", "New PressFit"];
 let headSet = ["None", "Service", "Bearings", "New Integrated ", "Sealed bearings"];
 
+let requiredInfo = ["serviceOrder","nameCustomer","phoneNumber","bikebrand","colouritem","extrainfo","price","dateSer","dateArr"];
+
+
 function htmlselect(idlocal, item) {
   let x = document.getElementById(idlocal);
   for (let i = 0; i < item.length; i++) {
@@ -71,13 +74,18 @@ const subElements = {};
 form.addEventListener("submit", event => {
   event.preventDefault();
   for (let i = 0; i < form.elements.length; i++) {
+
     if (form.elements[i].type !== "submit") {
-      if (form.elements[i].value !== "none") {
-        elements[form.elements[i].name] = form.elements[i].value;
+      for (let x = 0; x < requiredInfo.length; x++) {
+        if (form.elements[i].name == requiredInfo[x]) {
+          elements[form.elements[i].name] = form.elements[i].value;
+        }
+        else if (form.elements[i].value !== "none") {
+          subElements[form.elements[i].name] = form.elements[i].value;
+        }
       }
     }
 
-    
     elements["toDo"] = subElements;
   }
   ipcRenderer.send("servicesBikes:create", elements);
