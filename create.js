@@ -77,7 +77,9 @@ form.addEventListener("submit", event => {
   event.preventDefault();
   for (let i = 0; i < form.elements.length; i++) {
     if (form.elements[i].type !== "submit")
-      elements[form.elements[i].name] = form.elements[i].value;
+      if (form.elements[i].value !== "none") {
+        elements[form.elements[i].name] = form.elements[i].value;
+      }
   }
   ipcRenderer.send("servicesBikes:create", elements);
 });
@@ -90,6 +92,6 @@ function serOrderNum() {
   var hour = String(localDate.getHours()).padStart(2, '0');
   var min = String(localDate.getMinutes()).padStart(2, '0');
   var sec = String(localDate.getSeconds()).padStart(2, '0');
-  var serOrdNumb = year+mouth+day+"."+hour+min+sec;
+  var serOrdNumb = year + mouth + day + "." + hour + min + sec;
   document.getElementById("serNumber").value = serOrdNumb;
 }
