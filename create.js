@@ -22,7 +22,7 @@ let size = ['8"', '10"', '12"', '14"', '16"', '18"', '20"', '24"', '26"x1-1/4', 
 let bottomBracket = ["None", "Service", "New Square", "New HollowTech", "New PressFit"];
 let headSet = ["None", "Service", "Bearings", "New Integrated ", "Sealed bearings"];
 
-let requiredInfo = ["serviceOrder", "nameCustomer", "phoneNumber", "bikebrand", "colouritem", "extrainfo", "price", "dateSer", "dateArr"];
+let requiredInfo = ["serviceOrder", "nameCustomer", "phoneNumber", "bikebrand", "colouritem", "extrainfo", "price", "dateSer", "dateArr","model"];
 
 
 function htmlselect(idlocal, item) {
