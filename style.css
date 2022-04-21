@@ -11,6 +11,7 @@ body {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     background-image: linear-gradient(to left, rgb(250, 126, 219), rgb(0, 47, 255), rgb(0, 0, 0));
 }
+
 label {
     background-color: white;
     padding: 0.5em;
@@ -92,14 +93,19 @@ select::-ms-expand {
 
 /*css classes*/
 .divAppoit {
-    overflow:auto;
+    overflow: hidden;
     margin: 2.0em;
     padding: 0.5em;
     min-width: 600px;
-    min-height: 200px;
+    min-height: 100px;
     max-width: 600px;
-    max-height: 200px;
-    background-image: linear-gradient(to left, rgb(210, 210, 210), rgb(150, 150, 150), rgb(180, 180, 180));
+    max-height: 100px;
+    background-image: linear-gradient(to left, rgba(210, 210, 210, 0.800), rgb(150, 150, 150, 0.800), rgb(180, 180, 180, 0.800));
+}
+.divAppoit:hover{
+    overflow: visible;
+    min-width: 600px;
+    min-height: max-content;
 }
 
 .btnGeral {
@@ -114,10 +120,12 @@ select::-ms-expand {
     max-height: 30px;
 }
 
+
 .btnGeral:focus {
     background-color: dodgerblue;
     border: 1px solid blue;
 }
+
 .btnGeral:hover {
     background-color: dodgerblue;
     border: 1px solid blue;
@@ -133,11 +141,13 @@ select::-ms-expand {
     text-align: center;
 }
 
-.dateInfo, .totalPrice {
+.dateInfo,
+.totalPrice {
     position: relative;
     text-align: center;
 }
-.h1All{
+
+.h1All {
     width: max-content;
     height: min-content;
     background-color: rgba(240, 255, 255, 0.550);
@@ -185,14 +195,16 @@ select::-ms-expand {
     background-color: transparent;
     font-weight: 600;
 }
-#serviceDiv{
+
+#serviceDiv {
     min-width: 200px;
     min-height: 10px;
-    max-width:max-content;
-    max-height:max-content;
+    max-width: max-content;
+    max-height: max-content;
     padding: 0.9rem;
     background-color: white;
 }
+
 #serNumber {
     padding: .6rem;
     font-size: medium;
