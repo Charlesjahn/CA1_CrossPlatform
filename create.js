@@ -22,7 +22,7 @@ let size = ['8"', '10"', '12"', '14"', '16"', '18"', '20"', '24"', '26"x1-1/4', 
 let bottomBracket = ["None", "Service", "New Square", "New HollowTech", "New PressFit"];
 let headSet = ["None", "Service", "Bearings", "New Integrated ", "Sealed bearings"];
 
-let requiredInfo = ["serviceOrder","nameCustomer","phoneNumber","bikebrand","colouritem","extrainfo","price","dateSer","dateArr"];
+let requiredInfo = ["serviceOrder", "nameCustomer", "phoneNumber", "bikebrand", "colouritem", "extrainfo", "price", "dateSer", "dateArr"];
 
 
 function htmlselect(idlocal, item) {
@@ -76,11 +76,15 @@ form.addEventListener("submit", event => {
   for (let i = 0; i < form.elements.length; i++) {
 
     if (form.elements[i].type !== "submit") {
-      for (let x = 0; x < requiredInfo.length; x++) {
-        if (form.elements[i].name == requiredInfo[x]) {
+      let x = 0;
+      while (x < requiredInfo.length) {
+        if (form.elements[i].name === requiredInfo[x]) {
           elements[form.elements[i].name] = form.elements[i].value;
+          break;
+        } else {
+          x++;
         }
-        else if (form.elements[i].value !== "none") {
+        if (x == requiredInfo.length && form.elements[i].value !== "none") {
           subElements[form.elements[i].name] = form.elements[i].value;
         }
       }
