@@ -16,5 +16,26 @@
         },
         "id": "a5f52600-ac1c-4f50-91d8-cef14dc6251b",
         "done": 0
+    },
+    {
+        "bikebrand": "Cannondale",
+        "colouritem": "Blue",
+        "dateArr": "2022-04-28",
+        "dateSer": "2022-04-28",
+        "extrainfo": "",
+        "model": "Cross country",
+        "nameCustomer": "Charles",
+        "phoneNumber": "121345684",
+        "price": "150",
+        "serviceOrder": "1220428.091624",
+        "toDo": {
+            "bottomBracket": "New HollowTech",
+            "headSet": "Sealed bearings",
+            "pads": "Both",
+            "typeBrakes": "Disc Brakes",
+            "typeservice": "Special Service"
+        },
+        "id": "26235add-e760-45ce-ab41-fdf9ac681bbf",
+        "done": 0
     }
 ]
