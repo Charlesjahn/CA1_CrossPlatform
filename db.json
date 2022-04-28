@@ -1,41 +1,64 @@
 [
     {
-        "bikebrand": "Vitus",
-        "colouritem": "Purple",
-        "dateArr": "2022-04-21",
-        "dateSer": "2022-04-21",
-        "extrainfo": "",
-        "nameCustomer": "Jahn",
-        "phoneNumber": "09876543",
-        "price": "67",
-        "serviceOrder": "1220421.150253",
-        "toDo": {
-            "bottomBracket": "New PressFit",
-            "model": "Full Suspension",
-            "typeservice": "Full Service"
-        },
-        "id": "a5f52600-ac1c-4f50-91d8-cef14dc6251b",
+        "bikebrand": "sdfg",
+        "colouritem": "asdfg",
+        "dateArr": "2022-04-28",
+        "dateSer": "2022-04-28",
+        "extrainfo": "aswdfg",
+        "model": "Cross country",
+        "nameCustomer": "sdfg",
+        "phoneNumber": "2345678",
+        "price": "2345",
+        "serviceOrder": "1220428.114246",
+        "toDo": [
+            "Display off"
+        ],
+        "id": "f8dbf512-3b0c-4da3-856c-70dbcda1d5da",
         "done": 0
     },
     {
-        "bikebrand": "Cannondale",
-        "colouritem": "Blue",
+        "bikebrand": "asdfgdfgf",
+        "colouritem": "etrasd",
         "dateArr": "2022-04-28",
         "dateSer": "2022-04-28",
         "extrainfo": "",
-        "model": "Cross country",
-        "nameCustomer": "Charles",
-        "phoneNumber": "121345684",
-        "price": "150",
-        "serviceOrder": "1220428.091624",
-        "toDo": {
-            "bottomBracket": "New HollowTech",
-            "headSet": "Sealed bearings",
-            "pads": "Both",
-            "typeBrakes": "Disc Brakes",
-            "typeservice": "Special Service"
-        },
-        "id": "26235add-e760-45ce-ab41-fdf9ac681bbf",
+        "model": "City",
+        "nameCustomer": "sdfghj",
+        "phoneNumber": "erty1234",
+        "price": "234",
+        "serviceOrder": "1220428.114452",
+        "toDo": [
+            "Motor Failed"
+        ],
+        "id": "4c0877a0-88f6-49a8-b311-43dd0d3f3909",
+        "done": 0
+    },
+    {
+        "bikebrand": "test2",
+        "colouritem": "test2",
+        "dateArr": "2022-04-28",
+        "dateSer": "2022-04-28",
+        "extrainfo": "",
+        "model": "Hard Tail",
+        "nameCustomer": "test2",
+        "phoneNumber": "test2",
+        "price": "234",
+        "serviceOrder": "1220428.114558",
+        "toDo": [
+            "Full Service",
+            "Road Brakes",
+            "Front",
+            "160x6 Bolt",
+            "11 speed",
+            "11-30",
+            "28/36",
+            "14\"",
+            "Cantilevers",
+            "New Integrated ",
+            "New HollowTech",
+            "Not charging"
+        ],
+        "id": "22008aeb-e57e-493f-b64d-a0811fafced3",
         "done": 0
     }
 ]
