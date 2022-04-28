@@ -12,8 +12,10 @@
         "electron": "^5.0.13",
         "electron-builder": "^5.35.0",
         "electron-packager": "^5.2.0",
-        "nodemon": "^2.0.15",
         "g": "^2.0.1",
+        "nodemon": "^2.0.15",
+        "path": "^0.12.7",
+        "url": "^0.11.0",
         "uuid": "^3.4.0"
     }
 }
