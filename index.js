@@ -6,7 +6,7 @@ const { app, BrowserWindow, Menu, ipcMain } = electron;
 const path = require('path');
 const url = require('url');
 const { userInfo } = require("os");
-const { main } = require("json");
+//const { main } = require("json");
 
 let todayWindow;
 let createWindow;
