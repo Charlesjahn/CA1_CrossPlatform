@@ -213,6 +213,11 @@ select::-ms-expand {
     text-align: center;
     cursor: not-allowed;
 }
+#serviceDivinner{
+    background-color: rgb(253, 87, 87);
+    height: fit-content;
+    width: fit-content;
+}
 
 /* table CSS */
 .content-table {

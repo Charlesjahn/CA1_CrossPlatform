@@ -4,9 +4,6 @@ let services = ["None", "Basic service", "Full Service", "Special Service"];
 
 let eproblem = ["Dead Battery", "Motor Failed", "Display off", "Not charging", "Pedal Assistant", "Throttle"];
 
-let makeparts = ["Shimano", "Sram", "DTSwiss", "Mavic", "Campagnolo", "M-Wave", "Tifose", "Others"];
-let maketyres = ["Maxxis", "Vittoria", "Schwalbe", "Kenda", "Kujo", "Others"];
-
 let brakeType = ["None", "V-Brakes", "Road Brakes", "Disc Brakes", "Cantilevers"];
 let pads = ["None", "Front", "Back", "Both"];
 let disc = ["None", "120x6 Bolt", "120 C.lock", "140x6 Bolt", "140 C.lock", "160x6 Bolt", "160 C.lock", "180x6 Bolt", "180 C.lock", "208x6 Bolt", "208 C.lock"];
@@ -19,10 +16,12 @@ let crankset = ["None", "28/38/48", "28/36", "34", "34/50", "36/50", "36/52", "3
 let tyres = ["None", "Front Tyre", "Back Tyre", "Front Tube", "Back Tube", "F. Tyre & Tube", "B. Tyre & Tube", "F. & B. Tube", "F. & B. Tyre", "F.B. Tyre & Tube"];
 let size = ['8"', '10"', '12"', '14"', '16"', '18"', '20"', '24"', '26"x1-1/4', '26"x1-3/8', '27"x 1-1/4', '27.5"', '28"x1-1/4', '28"x1-3/8', '29"', '700'];
 
+let withsize = ['20C', '23C', '25C', '26C', '28C', '30C', '32C', '35C', '38C', '40C', '42C', '45C', '50C'];
+
 let bottomBracket = ["None", "Service", "New Square", "New HollowTech", "New PressFit"];
 let headSet = ["None", "Service", "Bearings", "New Integrated ", "Sealed bearings"];
 
-let requiredInfo = ["serviceOrder", "nameCustomer", "phoneNumber", "bikebrand", "colouritem", "extrainfo", "price", "dateSer", "dateArr","model"];
+let requiredInfo = ["serviceOrder", "nameCustomer", "phoneNumber", "bikebrand", "colouritem", "extrainfo", "price", "dateSer", "dateArr", "model"];
 
 
 function htmlselect(idlocal, item) {
@@ -45,11 +44,8 @@ htmlselect("disc", disc);
 htmlselect("chain", chain);
 htmlselect("cassette", cassette);
 htmlselect("crankset", crankset);
-htmlselect("makeparts", makeparts);
-htmlselect("maketyres", maketyres);
 htmlselect("flattyre", tyres);
-htmlselect("sizetyre", size);
-htmlselect("makewheels", makeparts);
+htmlselect("sizetyre", withsize);
 htmlselect("sizewheel", size);
 htmlselect("typeBrakeWheel", brakeType);
 htmlselect("bottomBracket", bottomBracket);
@@ -70,9 +66,12 @@ const electron = require("electron");
 const { ipcRenderer } = electron;
 const form = document.getElementById("form");
 const elements = {};
-const subElements = {};
+
+const subElements = [];
+
 form.addEventListener("submit", event => {
   event.preventDefault();
+  z = 0;
   for (let i = 0; i < form.elements.length; i++) {
 
     if (form.elements[i].type !== "submit") {
@@ -85,8 +84,10 @@ form.addEventListener("submit", event => {
           x++;
         }
         if (x == requiredInfo.length && form.elements[i].value !== "none") {
-          subElements[form.elements[i].name] = form.elements[i].value;
+          subElements[z] = form.elements[i].value;
+          z++;
         }
+
       }
     }
 
