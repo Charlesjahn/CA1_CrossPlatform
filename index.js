@@ -7,6 +7,7 @@ let createWindow;
 let listWindow;
 let allServices = [];
 let allUsers = [];
+let priceWindow;
 
 fs.readFile("db.json", (err, jsonServices) => {
     if (!err) {
@@ -46,6 +47,22 @@ const createWindowCreator = () => {
     }); createWindow.setMenu(null);
     createWindow.loadURL(`file://${__dirname}/create.html`);
     createWindow.on("closed", () => (createWindow = null));
+};
+
+// creating new price list window @Yuri 
+const createPriceCreator = () => {
+    priceWindow = new BrowserWindow({
+        webPreferences: {
+            nodeIntegration: true
+        },
+        
+        width: 450,
+        height: 1000,
+        title: "Price List"
+    }); 
+        priceWindow.setMenu(null);
+        priceWindow.loadURL(`file://${__dirname}/price.html`);
+        priceWindow.on("closed", () => (priceWindow = null));
 };
 // creating new user account @Bekezhan
 const createUserCreator = () => {
@@ -130,6 +147,12 @@ const menuTemplate = [
     {
         label: "File",
         submenu: [
+            {
+                label: "Price List",
+                click() {
+                    createPriceCreator();
+                }
+            },
             {
                 label: "New Services",
                 click() {
