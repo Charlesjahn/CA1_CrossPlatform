@@ -272,34 +272,14 @@ table td {
 
 
 /* Bekezhan*/
-@keyframes shake {
-    0%, 100%{
-      margin-left: 0px;
-    }
-    20%, 80%{
-      margin-left: -12px;
-    }
-    40%, 60%{
-      margin-left: 12px;
-    }
+  #login{
+
+      text-align: center;
   }
   form .field .input-area{
     height: 50px;
     width: 100%;
     position: relative;
-  }
-  form input{
-    width: 100%;
-    height: 100%;
-    outline: none;
-    padding: 0 45px;
-    font-size: 18px;
-    background: none;
-    caret-color: #5372F0;
-    border-radius: 5px;
-    border: 1px solid #bfbfbf;
-    border-bottom-width: 2px;
-    transition: all 0.2s ease;
   }
   form .field input:focus,
   form .field.valid input{
@@ -339,7 +319,7 @@ table td {
   }
   form .field .error-txt{
     color: #dc3545;
-    text-align: left;
+    text-align: center;
     margin-top: 5px;
   }
   form .field .error{
@@ -350,7 +330,7 @@ table td {
     display: block;
   }
   form .pass-txt{
-    text-align: left;
+    text-align: center;
     margin-top: -10px;
   }
   .wrapper a{
@@ -376,8 +356,11 @@ table td {
   }
 
   #loginDiv {
-    margin: 90px 0px;
+    margin: 90px 120px;
     /* display: flex; */
+  }
+  #logOutBtn {
+    float: right;
   }
 
   /* Navbar*/
@@ -385,11 +368,12 @@ table td {
 .topnav {
     overflow: hidden;
     background-color: rgba(0, 0, 0, 0.26);
-    position: fixed;
+    position: absolute;
     width: 100%;
     z-index: 9999;
     top: -9px;
     margin: 0px 0px 90px 0px;
+    border-radius: 0px;
 }
 
 .topnav:hover {

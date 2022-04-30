@@ -132,9 +132,27 @@ const sendTodayServices = () => {
     );
     todayWindow.webContents.send("servicesBikes:response:today", filtered);
 };
+
+// Nav bar @Bekezhan
+ipcMain.on("showThePriceList:clicked", (e) => {
+    createPriceCreator();
+})
+
+ipcMain.on("makeNewServices:clicked", (e) => {
+    createWindowCreator();
+})
+
 ipcMain.on("showAllServices:clicked", (e) => {
     listWindowCreator();
 })
+
+ipcMain.on("createNewUser:clicked", (e) => {
+    createUserCreator();
+})
+
+
+
+
 const menuTemplate = [
     {
         label: "File",

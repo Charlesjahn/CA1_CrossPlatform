@@ -1,15 +1,27 @@
+const loginDiv = document.getElementById("loginDiv"); //login Div
 const form = document.getElementById("login");
 eField = form.querySelector(".email"),
-eInput = eField.querySelector("input"), //username input
-pField = form.querySelector(".password"),
-pInput = pField.querySelector("input"); //password input
-let logOutNav = document.getElementById("logOut");
-logOutNav.style.display = "none"; 
-let username = eInput.value;
-let password = pInput.value;
+  eInput = eField.querySelector("input"), //username input
+  pField = form.querySelector(".password"),
+  pInput = pField.querySelector("input"); //password input
 
+let content = document.querySelectorAll(".content"); 
+hideContent();
+
+
+function hideContent() {
+  for (let i = 0; i < content.length; i++) {
+    content[i].style.visibility = "hidden";
+  }
+};
+
+function unhideContent() { 
+  for (let i = 0; i < content.length; i++) {
+    content[i].style.visibility = "visible";
+  }
+};
+//parsing users_db.json
 let allUsers = [];
-
 let url = "users_db.json";
 
 fetch(url)
@@ -19,25 +31,20 @@ fetch(url)
     allUsers = json;
   });
 
+let loginSuccess = false;
 
-
-// form.onsubmit = (event) => {
-//   event.preventDefault();
-//   let userName = eInput.value;
-//   let userPass = pInput.value;
-//   ipcRenderer.send('login', userName, userPass);
-
-
-//}
 form.onsubmit = (e) => {
   e.preventDefault();
-  const loginDiv = document.getElementById("loginDiv");
-  console.log("worrking")
   let username = eInput.value;
   let password = pInput.value;
+  console.log("worrking");
   lookForUser(username, password);
+  if (loginSuccess === true) {
+    loginDiv.style.display = "none";
+    unhideContent();
+  }
 };
-
+//function checks the user input and if the user exists, password and username are right then login is successful
 function lookForUser(username, password) {
 
   for (let i = 0; i < allUsers.length; i++) {
@@ -53,8 +60,8 @@ function lookForUser(username, password) {
         pField.classList.add("error");
         pField.classList.remove("valid");
         console.log(username, password);
-        loginDiv.style.display = "none";
-        logOutNav.style.display = "inline-block";
+        loginSuccess = true;
+
 
       }
       pField.classList.add("error");
@@ -71,10 +78,28 @@ function lookForUser(username, password) {
   }
 }
 
-function logOutFunc(){
-  
+function logOutFunc() {
+
   loginDiv.style.display = "block";
-  logOutNav.style.display = "none";
+  hideContent();
+}
+
+// Navbar functions 
+
+function showAllServices() {
+  ipcRenderer.send("showAllServices:clicked");
+}
+
+function makeNewServices() {
+  ipcRenderer.send("makeNewServices:clicked");
+}
+
+function showThePriceList() {
+  ipcRenderer.send("showThePriceList:clicked");
+}
+
+function createNewUser() {
+  ipcRenderer.send("createNewUser:clicked");
 }
 
 // function Authorization() {
