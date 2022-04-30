@@ -5,7 +5,7 @@ eField = form.querySelector(".email"),
   pField = form.querySelector(".password"),
   pInput = pField.querySelector("input"); //password input
 
-let content = document.querySelectorAll(".content"); 
+let content = document.querySelectorAll(".content");
 hideContent();
 
 
@@ -15,7 +15,7 @@ function hideContent() {
   }
 };
 
-function unhideContent() { 
+function unhideContent() {
   for (let i = 0; i < content.length; i++) {
     content[i].style.visibility = "visible";
   }
