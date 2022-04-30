@@ -173,12 +173,12 @@ select::-ms-expand {
 #github {
   width: 50px;
   height: 50px;
-  position:absolute;
+  position: absolute;
   background-color: black;
   border-radius: 50px;
   padding: .31em;
   right: 0%;
-  top: 0%;
+  top: 60px;
   background-image: url("imagem/github.png");
   background-repeat: no-repeat;
   background-position: center;
@@ -374,14 +374,14 @@ form input[type="submit"]:hover {
 /* Navbar*/
 
 .topnav {
-  padding: 0.3em;
+  padding: 0.1em;
   background-color: rgba(0, 0, 0, 0.26);
   position: static;
   width: 100%;
   height: 50px;
   z-index: 9999;
   top: -9px;
-  margin: 0px 0px 90px 0px;
+  margin: 0px 0px 70px 0px;
   border-radius: 0px;
 }
 
@@ -393,7 +393,7 @@ form input[type="submit"]:hover {
   float: left;
   color: #f2f2f2;
   text-align: center;
-  padding: 14px 16px;
+  padding: 0.3em;
   text-decoration: none;
   font-size: 24px;
 }
