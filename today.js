@@ -1,5 +1,5 @@
-const electron = require("electron");
-const { ipcRenderer } = electron;
+const electron = require("electron")
+const { ipcRenderer } = electron
 ipcRenderer.send("servicesBikes:request:today");
 ipcRenderer.on("servicesBikes:response:today", (event, servicesBikesX) => {
     const listDiv = document.getElementById("list");
