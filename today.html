@@ -4,18 +4,17 @@
     <link rel="stylesheet" href="style.css">
 </head>
 
-<header>
-    <!-- Nav bar-->
-    <div class="topnav">
-        <a class="content" onclick="showAllServices()">New Services</a>
-        <a class="content" onclick="makeNewServices()">All Services</a>
-        <a class="content" onclick="showThePriceList()">Price List</a>
-        <a class="content" onclick="createNewUser()">New Account</a>
-        <a id="logOutBtn" class="content" onclick="logOutFunc()">Log out</a>
-    </div>
-</header>
-
 <body>
+    <header>
+        <!-- Nav bar-->
+        <div class="topnav">
+            <a class="content" onclick="makeNewServices()">New Services</a>
+            <a class="content" onclick="showAllServices()">All Services</a>
+            <a class="content" onclick="showThePriceList()">Price List</a>
+            <a class="content" onclick="createNewUser()">New Account</a>
+            <a id="logOutBtn" class="content" onclick="logOutFunc()">Log out</a>
+        </div>
+    </header>
     <div id="loginDiv">
         <form id="login">
             <div class="field email">
@@ -39,7 +38,7 @@
         </form>
 
     </div>
-    <div style="visibility: hidden;">
+    <div class="content" id="divTodayServices">
         <div id="github">
         </div>
         <h1 class="h1All">Services for Today</h1>
@@ -48,4 +47,5 @@
     <script src="login.js"></script>
     <script src="today.js"></script>
 </body>
+
 </html>

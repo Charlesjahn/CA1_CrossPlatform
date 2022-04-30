@@ -9,6 +9,7 @@ let content = document.querySelectorAll(".content");
 hideContent();
 
 
+
 function hideContent() {
   for (let i = 0; i < content.length; i++) {
     content[i].style.visibility = "hidden";
@@ -20,6 +21,7 @@ function unhideContent() {
     content[i].style.visibility = "visible";
   }
 };
+
 //parsing users_db.json
 let allUsers = [];
 let url = "users_db.json";
@@ -60,6 +62,7 @@ function lookForUser(username, password) {
         pField.classList.add("error");
         pField.classList.remove("valid");
         console.log(username, password);
+
         loginSuccess = true;
 
 
@@ -76,6 +79,7 @@ function lookForUser(username, password) {
     console.log(username);
     console.log(allUsers[i].username);
   }
+  loginSuccess = true;
 }
 
 function logOutFunc() {

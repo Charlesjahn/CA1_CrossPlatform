@@ -1,35 +1,35 @@
 /*css general*/
 * {
-    margin: 0;
-    padding: 0;
-    border-radius: 20px;
+  margin: 0;
+  padding: 0;
+  border-radius: 20px;
 }
 
 body {
-    width: 100%;
-    height: 100%;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    background-image: linear-gradient(to left, rgb(250, 126, 219), rgb(0, 47, 255), rgb(0, 0, 0));
+  width: 100%;
+  height: 100%;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  background-image: linear-gradient(to left, rgb(250, 126, 219), rgb(0, 47, 255), rgb(0, 0, 0));
 }
 
 label {
-    background-color: white;
-    padding: 0.5em;
-    border-radius: 20px;
-    align-items: center;
-    justify-content: center;
+  background-color: white;
+  padding: 0.5em;
+  border-radius: 20px;
+  align-items: center;
+  justify-content: center;
 }
 
 div {
-    margin: 10px;
-    align-items: center;
-    justify-content: center;
+  margin: 10px;
+  align-items: center;
+  justify-content: center;
 }
 
 form {
-    margin: 1.5em;
-    padding: 0.8em;
-    background-image: linear-gradient(to left, rgb(210, 210, 210), rgb(150, 150, 150), rgb(180, 180, 180));
+  margin: 1.5em;
+  padding: 0.8em;
+  background-image: linear-gradient(to left, rgb(210, 210, 210), rgb(150, 150, 150), rgb(180, 180, 180));
 }
 
 p,
@@ -37,364 +37,373 @@ tr,
 td,
 h1,
 h2 {
-    padding: 0.3em;
-    margin: 0.3em;
+  padding: 0.3em;
+  margin: 0.3em;
 
 }
 
 input {
-    color: black;
-    padding: .6rem;
-    min-width: 280px;
-    max-width: 280px;
-    background-color: white;
+  color: black;
+  padding: .6rem;
+  min-width: 280px;
+  max-width: 280px;
+  background-color: white;
 }
 
 input:hover,
 input:focus {
-    background-color: skyblue;
+  background-color: skyblue;
 }
 
 /*hide arrow on field input phoneNumber*/
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
-    -webkit-appearance: none;
-    margin: 0;
+  -webkit-appearance: none;
+  margin: 0;
 }
 
 select {
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-    border: 0;
-    padding: .5em;
-    background-color: white;
-    font: inherit;
-    text-align: center;
-    justify-content: center;
-    min-width: 125px;
-    max-width: 125px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border: 0;
+  padding: .5em;
+  background-color: white;
+  font: inherit;
+  text-align: center;
+  justify-content: center;
+  min-width: 125px;
+  max-width: 125px;
 }
 
 select:hover,
 select:focus {
-    background-color: skyblue;
-    color: black;
+  background-color: skyblue;
+  color: black;
 }
 
 select:active {
-    background-color: skyblue;
+  background-color: skyblue;
 }
 
 select::-ms-expand {
-    display: none;
+  display: none;
 }
 
 
 /*css classes*/
 .divAppoit {
-    overflow: hidden;
-    margin: 2.0em;
-    padding: 0.5em;
-    min-width: 600px;
-    min-height: 100px;
-    max-width: 600px;
-    max-height: 100px;
-    background-image: linear-gradient(to left, rgba(210, 210, 210, 0.800), rgb(150, 150, 150, 0.800), rgb(180, 180, 180, 0.800));
+  overflow: hidden;
+  margin: 2.0em;
+  padding: 0.5em;
+  min-width: 600px;
+  min-height: 100px;
+  max-width: 600px;
+  max-height: 100px;
+  background-image: linear-gradient(to left, rgba(210, 210, 210, 0.800), rgb(150, 150, 150, 0.800), rgb(180, 180, 180, 0.800));
 }
-.divAppoit:hover{
-    overflow: visible;
-    min-width: 600px;
-    min-height: max-content;
+
+.divAppoit:hover {
+  overflow: visible;
+  min-width: 600px;
+  min-height: max-content;
 }
 
 .btnGeral {
-    position: relative;
-    padding: 0.5em;
-    border: 0;
-    background-color: rgb(120, 180, 250);
-    font-weight: 600;
-    min-width: 90px;
-    min-height: 30px;
-    max-width: 90px;
-    max-height: 30px;
+  position: relative;
+  padding: 0.5em;
+  border: 0;
+  background-color: rgb(120, 180, 250);
+  font-weight: 600;
+  min-width: 90px;
+  min-height: 30px;
+  max-width: 90px;
+  max-height: 30px;
 }
 
 
 .btnGeral:focus {
-    background-color: dodgerblue;
-    border: 1px solid blue;
+  background-color: dodgerblue;
+  border: 1px solid blue;
 }
 
 .btnGeral:hover {
-    background-color: dodgerblue;
-    border: 1px solid blue;
-    cursor: pointer;
+  background-color: dodgerblue;
+  border: 1px solid blue;
+  cursor: pointer;
 }
 
 .inputData {
-    padding: 0.5rem;
-    font-weight: 530;
-    font-size: medium;
-    min-width: 120px;
-    max-width: 120px;
-    text-align: center;
+  padding: 0.5rem;
+  font-weight: 530;
+  font-size: medium;
+  min-width: 120px;
+  max-width: 120px;
+  text-align: center;
 }
 
 .dateInfo,
 .totalPrice {
-    position: relative;
-    text-align: center;
+  position: relative;
+  text-align: center;
 }
 
 .h1All {
-    width: max-content;
-    height: min-content;
-    background-color: rgba(240, 255, 255, 0.550);
+  width: max-content;
+  height: min-content;
+  background-color: rgba(240, 255, 255, 0.550);
 }
 
 /*css ids*/
 
 #extrainfo {
-    padding: 0.9rem;
-    font-weight: 600;
-    min-width: 570px;
-    max-width: 570px;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  padding: 0.9rem;
+  font-weight: 600;
+  min-width: 570px;
+  max-width: 570px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 #listBtn {
-    display: relative;
-    justify-content: center;
-    align-items: center;
+  display: relative;
+  justify-content: center;
+  align-items: center;
 }
 
 #github {
-    width: 50px;
-    height: 50px;
-    background-color: black;
-    border-radius: 50px;
-    position: absolute;
-    padding: .31em;
-    right: 0%;
-    top: 0%;
-    background-image: url("imagem/github.png");
-    background-repeat: no-repeat;
-    background-position: center;
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  background-color: black;
+  border-radius: 50px;
+  padding: .31em;
+  right: 0%;
+  top: 60px;
+  background-image: url("imagem/github.png");
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 #divForm {
-    width: min-content;
-    height: min-content;
-    margin-left: auto;
-    margin-right: auto;
+  width: min-content;
+  height: min-content;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 #labelInfo,
 #labelTotalPrice {
-    background-color: transparent;
-    font-weight: 600;
+  background-color: transparent;
+  font-weight: 600;
 }
 
 #serviceDiv {
-    min-width: 200px;
-    min-height: 10px;
-    max-width: max-content;
-    max-height: max-content;
-    padding: 0.9rem;
-    background-color: white;
+  min-width: 200px;
+  min-height: 10px;
+  max-width: max-content;
+  max-height: max-content;
+  padding: 0.9rem;
+  background-color: white;
 }
 
 #serNumber {
-    padding: .6rem;
-    font-size: medium;
-    min-width: 150px;
-    max-width: 150px;
-    text-align: center;
-    cursor: not-allowed;
+  padding: .6rem;
+  font-size: medium;
+  min-width: 150px;
+  max-width: 150px;
+  text-align: center;
+  cursor: not-allowed;
 }
-#serviceDivinner{
-    background-color: rgb(253, 87, 87);
-    height: fit-content;
-    width: fit-content;
+
+#serviceDivinner {
+  background-color: rgb(253, 87, 87);
+  height: fit-content;
+  width: fit-content;
 }
 
 /* table CSS */
 .content-table {
-    border-collapse: collapse;
-    margin: 25px 0;
-    font-size: 0.9em;
-    min-width: 400px;
-    border-radius: 5px 5px 0 0;
-    overflow: hidden;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
-  }
-  
-  .content-table thead tr {
-    background-color: #009879;
-    color: #ffffff;
-    text-align: left;
-    font-weight: bold;
-  }
-  
-  .content-table th,
-  .content-table td {
-    padding: 12px 15px;
-  }
-  
-  .content-table tbody tr {
-    border-bottom: 1px solid #dddddd;
-  }
-  
-  .content-table tbody tr:nth-of-type(even) {
-    background-color: #f3f3f3;
-  }
-  
-  .content-table tbody tr:last-of-type {
-    border-bottom: 2px solid #009879;
-  }
-  
-  .content-table tbody tr.active-row {
-    font-weight: bold;
-    color: #009879;
-  }
-
-/* CSS for tests */
-/* table {
-    border-collapse: collapse;
-    border: 1px solid #FF0000;
+  border-collapse: collapse;
+  margin: 25px 0;
+  font-size: 0.9em;
+  min-width: 400px;
+  border-radius: 5px 5px 0 0;
+  overflow: hidden;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
 }
 
-table td {
-    border: 1px solid #FF0000;
-} */
+.content-table thead tr {
+  background-color: #009879;
+  color: #ffffff;
+  text-align: left;
+  font-weight: bold;
+}
 
+.content-table th,
+.content-table td {
+  padding: 12px 15px;
+}
 
+.content-table tbody tr {
+  border-bottom: 1px solid #dddddd;
+}
+
+.content-table tbody tr:nth-of-type(even) {
+  background-color: #f3f3f3;
+}
+
+.content-table tbody tr:last-of-type {
+  border-bottom: 2px solid #009879;
+}
+
+.content-table tbody tr.active-row {
+  font-weight: bold;
+  color: #009879;
+}
 
 /* Bekezhan*/
-  #login{
+#login {
 
-      text-align: center;
-  }
-  form .field .input-area{
-    height: 50px;
-    width: 100%;
-    position: relative;
-  }
-  form .field input:focus,
-  form .field.valid input{
-    border-color: #5372F0;
-  }
-  form .field.shake input,
-  form .field.error input{
-    border-color: #dc3545;
-  }
-  .field .input-area i{
-    position: absolute;
-    top: 50%;
-    font-size: 18px;
-    pointer-events: none;
-    transform: translateY(-50%);
-  }
-  .input-area .icon{
-    left: 15px;
-    color: #bfbfbf;
-    transition: color 0.2s ease;
-  }
-  .input-area .error-icon{
-    right: 15px;
-    color: #dc3545;
-  }
-  form input:focus ~ .icon,
-  form .field.valid .icon{
-    color: #5372F0;
-  }
-  form .field.shake input:focus ~ .icon,
-  form .field.error input:focus ~ .icon{
-    color: #bfbfbf;
-  }
-  form input::placeholder{
-    color: #bfbfbf;
-    font-size: 17px;
-  }
-  form .field .error-txt{
-    color: #dc3545;
-    text-align: center;
-    margin-top: 5px;
-  }
-  form .field .error{
-    display: none;
-  }
-  form .field.shake .error,
-  form .field.error .error{
-    display: block;
-  }
-  form .pass-txt{
-    text-align: center;
-    margin-top: -10px;
-  }
-  .wrapper a{
-    color: #5372F0;
-    text-decoration: none;
-  }
-  .wrapper a:hover{
-    text-decoration: underline;
-  }
-  form input[type="submit"]{
-    height: 50px;
-    margin-top: 30px;
-    color: #fff;
-    padding: 0;
-    border: none;
-    background: #5372F0;
-    cursor: pointer;
-    border-bottom: 2px solid rgba(0,0,0,0.1);
-    transition: all 0.3s ease;
-  }
-  form input[type="submit"]:hover{
-    background: #2c52ed;
-  }
+  text-align: center;
+}
 
-  #loginDiv {
-    margin: 90px 120px;
-    /* display: flex; */
-  }
-  #logOutBtn {
-    float: right;
-  }
+form .field .input-area {
+  height: 50px;
+  width: 100%;
+  position: relative;
+}
 
-  /* Navbar*/
+form .field input:focus,
+form .field.valid input {
+  border-color: #5372F0;
+}
+
+form .field.shake input,
+form .field.error input {
+  border-color: #dc3545;
+}
+
+.field .input-area i {
+  position: absolute;
+  top: 50%;
+  font-size: 18px;
+  pointer-events: none;
+  transform: translateY(-50%);
+}
+
+.input-area .icon {
+  left: 15px;
+  color: #bfbfbf;
+  transition: color 0.2s ease;
+}
+
+.input-area .error-icon {
+  right: 15px;
+  color: #dc3545;
+}
+
+form input:focus~.icon,
+form .field.valid .icon {
+  color: #5372F0;
+}
+
+form .field.shake input:focus~.icon,
+form .field.error input:focus~.icon {
+  color: #bfbfbf;
+}
+
+form input::placeholder {
+  color: #bfbfbf;
+  font-size: 17px;
+}
+
+form .field .error-txt {
+  color: #dc3545;
+  text-align: center;
+  margin-top: 5px;
+}
+
+form .field .error {
+  display: none;
+}
+
+form .field.shake .error,
+form .field.error .error {
+  display: block;
+}
+
+form .pass-txt {
+  text-align: center;
+  margin-top: -10px;
+}
+
+.wrapper a {
+  color: #5372F0;
+  text-decoration: none;
+}
+
+.wrapper a:hover {
+  text-decoration: underline;
+}
+
+form input[type="submit"] {
+  height: 50px;
+  margin-top: 30px;
+  color: #fff;
+  padding: 0;
+  border: none;
+  background: #5372F0;
+  cursor: pointer;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+form input[type="submit"]:hover {
+  background: #2c52ed;
+}
+
+#loginDiv {
+  margin: 90px 120px;
+  /* display: flex; */
+}
+
+#logOutBtn {
+  float: right;
+}
+
+/* Navbar*/
 
 .topnav {
-    overflow: hidden;
-    background-color: rgba(0, 0, 0, 0.26);
-    position: absolute;
-    width: 100%;
-    z-index: 9999;
-    top: -9px;
-    margin: 0px 0px 90px 0px;
-    border-radius: 0px;
+  padding: 0.1em;
+  background-color: rgba(0, 0, 0, 0.26);
+  position: static;
+  width: 100%;
+  height: 50px;
+  z-index: 9999;
+  top: -9px;
+  margin: 0px 0px 70px 0px;
+  border-radius: 0px;
 }
 
 .topnav:hover {
-    background-color: #000;
+  background-color: #000;
 }
 
 .topnav a {
-    float: left;
-    color: #f2f2f2;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 24px;
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 0.3em;
+  text-decoration: none;
+  font-size: 24px;
 }
 
 .topnav a:hover {
-    background-color: #ddd;
-    color: black;
+  background-color: #ddd;
+  color: black;
 }
 
 .topnav a.active {
-    background-color: #04AA6D;
-    color: white;
+  background-color: #e962f5;
+  color: rgb(0, 0, 0);
 }
