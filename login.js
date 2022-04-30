@@ -8,6 +8,8 @@ eField = form.querySelector(".email"),
 let content = document.querySelectorAll(".content");
 hideContent();
 
+let divTodayService = document.getElementById("divTodayServices");
+
 
 function hideContent() {
   for (let i = 0; i < content.length; i++) {
@@ -20,6 +22,7 @@ function unhideContent() {
     content[i].style.visibility = "visible";
   }
 };
+
 //parsing users_db.json
 let allUsers = [];
 let url = "users_db.json";
@@ -42,6 +45,7 @@ form.onsubmit = (e) => {
   if (loginSuccess === true) {
     loginDiv.style.display = "none";
     unhideContent();
+    divTodayService.style.visibility = "visible";
   }
 };
 //function checks the user input and if the user exists, password and username are right then login is successful
@@ -60,6 +64,7 @@ function lookForUser(username, password) {
         pField.classList.add("error");
         pField.classList.remove("valid");
         console.log(username, password);
+
         loginSuccess = true;
 
 
