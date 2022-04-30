@@ -8,15 +8,15 @@
     <header>
         <!-- Nav bar-->
         <div class="topnav">
-            <a class="content" onclick="showAllServices()">New Services</a>
-            <a class="content" onclick="makeNewServices()">All Services</a>
+            <a class="content" onclick="makeNewServices()">New Services</a>
+            <a class="content" onclick="showAllServices()">All Services</a>
             <a class="content" onclick="showThePriceList()">Price List</a>
             <a class="content" onclick="createNewUser()">New Account</a>
             <a id="logOutBtn" class="content" onclick="logOutFunc()">Log out</a>
+            <div id="github">
+            </div>
         </div>
     </header>
-
-
     <div id="loginDiv">
         <form id="login">
             <div class="field email">
@@ -41,8 +41,7 @@
 
     </div>
     <div style="visibility: hidden;" id="divTodayServices">
-        <div id="github">
-        </div>
+
         <h1 class="h1All">Services for Today</h1>
         <div id="list"></div>
     </div>
