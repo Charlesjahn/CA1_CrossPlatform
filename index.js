@@ -2,11 +2,11 @@ const electron = require("electron");
 const fs = require("fs");
 const uuid = require("uuid");
 const { app, BrowserWindow, Menu, ipcMain } = electron;
+
 let todayWindow;
 let createWindow;
 let listWindow;
 let allServices = [];
-let allUsers = [];
 let priceWindow;
 
 fs.readFile("db.json", (err, jsonServices) => {
@@ -90,17 +90,6 @@ ipcMain.on("user:request:listOfAllUsers", event => {
     listWindow.webContents.send("user:response:listOfAllUsers", allUsers);
 });
 
-fs.readFile("./users_db.json", (err, jsonAllUsers) => {
-    if (!err) {
-        const oldUsers = JSON.parse(jsonAllUsers);
-        jsonAllUsers = oldUsers;
-    }
-});
-const jsonAllUsers = JSON.stringify(allUsers);
-fs.writeFileSync("./users_db.json", jsonAllUsers);
-
-
-
 // creating all Services window
 
 const listWindowCreator = () => {
@@ -143,6 +132,27 @@ const sendTodayServices = () => {
     );
     todayWindow.webContents.send("servicesBikes:response:today", filtered);
 };
+
+// Nav bar @Bekezhan
+ipcMain.on("showThePriceList:clicked", (e) => {
+    createPriceCreator();
+})
+
+ipcMain.on("makeNewServices:clicked", (e) => {
+    createWindowCreator();
+})
+
+ipcMain.on("showAllServices:clicked", (e) => {
+    listWindowCreator();
+})
+
+ipcMain.on("createNewUser:clicked", (e) => {
+    createUserCreator();
+})
+
+
+
+
 const menuTemplate = [
     {
         label: "File",
