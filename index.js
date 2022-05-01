@@ -3,6 +3,12 @@ const fs = require("fs");
 const uuid = require("uuid");
 const { app, BrowserWindow, Menu, ipcMain } = electron;
 
+// import the following to deal with pdf
+const os = require('os'); //The module provides a temporary location to store the pdf file
+const ipc = electron.ipcMain;
+const shell = electron.shell; // the module provides functions related to desktop integration
+const path = require("path");
+
 let todayWindow;
 let createWindow;
 let listWindow;
@@ -26,12 +32,16 @@ app.on("ready", () => {
         title: "CA Bikes service booking"
     });
     todayWindow.loadURL(`file://${__dirname}/today.html`);
+    
     todayWindow.on("closed", () => {
+       
         const jsonServices = JSON.stringify(allServices);
         fs.writeFileSync("db.json", jsonServices);
         app.quit();
         todayWindow = null;
+       
     });
+    
     const mainMenu = Menu.buildFromTemplate(menuTemplate);
     Menu.setApplicationMenu(mainMenu);
 });
@@ -47,6 +57,7 @@ const createWindowCreator = () => {
     }); createWindow.setMenu(null);
     createWindow.loadURL(`file://${__dirname}/create.html`);
     createWindow.on("closed", () => (createWindow = null));
+    
 };
 
 // creating new price list window @Yuri 
@@ -195,3 +206,22 @@ const menuTemplate = [
         submenu: [{ role: "reload" }, { role: "toggledevtools" }]
     }
 ];
+
+// Create PDF @Yuri
+ipc.on('print-to-pdf', event => {
+    const pdfPath = path.join(os.tmpdir(), 'some-ducking-pdf.pdf');
+    const win = BrowserWindow.fromWebContents(event.sender);
+  
+    win.webContents.printToPDF({}, (error, data) => {
+      if (error) return console.log(error.message);
+  
+      fs.writeFile(pdfPath, data, err => {
+        if (err) return console.log(err.message);
+        shell.openExternal('file://' + pdfPath);
+        
+      })
+      
+    })
+  });
+
+  
