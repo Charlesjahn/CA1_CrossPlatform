@@ -6,9 +6,13 @@
     {
         "username": "CFJahn@mail.com",
         "password": "pass1234"
-    }
+    },
     {
         "username": "AlbqLuiza@mail.com",
         "password": "New3456"
+    },
+    {
+        "username": "Ywr@mail.com",
+        "password": "pass123!"
     }
 ]
