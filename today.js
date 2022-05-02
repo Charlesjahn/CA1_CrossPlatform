@@ -36,20 +36,16 @@ ipcRenderer.on("servicesBikes:response:today", (event, servicesBikesX) => {
 
         var x = 0;
         while (x < test.length) {
-            const servicesDivinner = document.createElement("div");
-            servicesDivinner.id = "serviceDivinner";
             const inputCheckBox = document.createElement("input");
             inputCheckBox.type = "checkbox";
-            inputCheckBox.value = "test"
-            inputCheckBox.id = "inputCheckBox"
+            inputCheckBox.className = "inputCheckBox"
             const labelCheckBox = document.createElement("label");
             labelCheckBox.for = "test";
+            labelCheckBox.className = "labelServices";
             labelCheckBox.innerText = `${servicesBikes.toDo[x]}`;
-
-
-            servicesDivinner.appendChild(inputCheckBox);
-            servicesDivinner.appendChild(labelCheckBox);
-            servicesDiv.appendChild(servicesDivinner);
+            servicesDiv.appendChild(inputCheckBox);
+            servicesDiv.appendChild(labelCheckBox);
+            servicesDiv.appendChild(document.createElement("br"));
             x++;
         }
 
