@@ -1,1 +1,126 @@
-[{"bikebrand":"ASD","colouritem":"asdf","dateArr":"2022-04-28","dateSer":"2022-04-28","extrainfo":"szdxfc","model":"Gravel","nameCustomer":"asdxfgg","phoneNumber":"234","price":"23","serviceOrder":"1220428.124502","toDo":["Full Service","9 speed"],"id":"7d850351-2624-4493-a3fd-06d18aaf2a7c","done":0},{"bikebrand":"bmx","colouritem":"black","dateArr":"2022-04-30","dateSer":"2022-04-30","extrainfo":"","model":"BMX","nameCustomer":"Bekezhan Abdykarimov","phoneNumber":"88775426298","price":"540","serviceOrder":"1220430.150633","toDo":["Full Service","Road Brakes","Back","F. Tyre & Tube","30C","Road Brakes","Bearings","New Square"],"id":"c2b65c78-7ac1-4ae5-a0b2-4b7b4a5e7546","done":0},{"bikebrand":"asdfgh","colouritem":"ASDFGH","dateArr":"2022-04-30","dateSer":"2022-04-30","extrainfo":"WERTYU","model":"Gravel","nameCustomer":"wsdfghjk","phoneNumber":"asdfghj","price":"25","serviceOrder":"1220430.180146","toDo":["Full Service","11-30","34/50","Service"],"id":"9691ff52-3308-49fd-8f69-a0d2897f59b0","done":1},{"bikebrand":"asdfg","colouritem":"asdfg","dateArr":"2022-04-30","dateSer":"2022-04-30","extrainfo":"","model":"City","nameCustomer":"asdfg","phoneNumber":"asdfg","price":"23","serviceOrder":"1220430.184723","toDo":["Full Service","9 speed","11-30","Front Tube","32C"],"id":"6ce87f78-b452-400d-95cc-dc614c968c95","done":1},{"bikebrand":"Trek","colouritem":"Blue","dateArr":"2022-05-01","dateSer":"2022-05-01","extrainfo":"","model":"Hard Tail","nameCustomer":"Luiza","phoneNumber":"4515215","price":"225","serviceOrder":"1220501.210956","toDo":["Basic service","12\"","Front Tube","26C","Disc Brakes","Service","Service"],"id":"c92a3996-2449-4811-8f9e-b6b3d7194ae1","done":1}]
+[
+    {
+        "bikebrand": "ASD",
+        "colouritem": "asdf",
+        "dateArr": "2022-04-28",
+        "dateSer": "2022-05-02",
+        "extrainfo": "szdxfc",
+        "model": "Gravel",
+        "nameCustomer": "asdxfgg",
+        "phoneNumber": "234",
+        "price": "23",
+        "serviceOrder": "1220428.124502",
+        "toDo": [
+            "Full Service",
+            "9 speed"
+        ],
+        "id": "7d850351-2624-4493-a3fd-06d18aaf2a7c",
+        "done": 0
+    },
+    {
+        "bikebrand": "bmx",
+        "colouritem": "black",
+        "dateArr": "2022-04-30",
+        "dateSer": "2022-05-02",
+        "extrainfo": "",
+        "model": "BMX",
+        "nameCustomer": "Bekezhan Abdykarimov",
+        "phoneNumber": "88775426298",
+        "price": "540",
+        "serviceOrder": "1220430.150633",
+        "toDo": [
+            "Full Service",
+            "Road Brakes",
+            "Back",
+            "F. Tyre & Tube",
+            "30C",
+            "Road Brakes",
+            "Bearings",
+            "New Square"
+        ],
+        "id": "c2b65c78-7ac1-4ae5-a0b2-4b7b4a5e7546",
+        "done": 0
+    },
+    {
+        "bikebrand": "asdfgh",
+        "colouritem": "ASDFGH",
+        "dateArr": "2022-04-30",
+        "dateSer": "2022-05-02",
+        "extrainfo": "WERTYU",
+        "model": "Gravel",
+        "nameCustomer": "wsdfghjk",
+        "phoneNumber": "asdfghj",
+        "price": "25",
+        "serviceOrder": "1220430.180146",
+        "toDo": [
+            "Full Service",
+            "11-30",
+            "34/50",
+            "Service"
+        ],
+        "id": "9691ff52-3308-49fd-8f69-a0d2897f59b0",
+        "done": 1
+    },
+    {
+        "bikebrand": "asdfg",
+        "colouritem": "asdfg",
+        "dateArr": "2022-04-30",
+        "dateSer": "2022-04-30",
+        "extrainfo": "",
+        "model": "City",
+        "nameCustomer": "asdfg",
+        "phoneNumber": "asdfg",
+        "price": "23",
+        "serviceOrder": "1220430.184723",
+        "toDo": [
+            "Full Service",
+            "9 speed",
+            "11-30",
+            "Front Tube",
+            "32C"
+        ],
+        "id": "6ce87f78-b452-400d-95cc-dc614c968c95",
+        "done": 1
+    },
+    {
+        "bikebrand": "Trek",
+        "colouritem": "Blue",
+        "dateArr": "2022-05-01",
+        "dateSer": "2022-05-02",
+        "extrainfo": "",
+        "model": "Hard Tail",
+        "nameCustomer": "Luiza",
+        "phoneNumber": "4515215",
+        "price": "225",
+        "serviceOrder": "1220501.210956",
+        "toDo": [
+            "Basic service",
+            "12\"",
+            "Front Tube",
+            "26C",
+            "Disc Brakes",
+            "Service",
+            "Service"
+        ],
+        "id": "c92a3996-2449-4811-8f9e-b6b3d7194ae1",
+        "done": 1
+    },
+    {
+        "bikebrand": "test2.1",
+        "colouritem": "test2.3",
+        "dateArr": "2022-05-02",
+        "dateSer": "2022-05-02",
+        "extrainfo": "asdfg",
+        "model": "BMX",
+        "nameCustomer": "test2",
+        "phoneNumber": "23456789",
+        "price": "23",
+        "serviceOrder": "1220502.215642",
+        "toDo": [
+            "Bearings",
+            "New Square"
+        ],
+        "id": "4e9e81d0-e5b3-4a78-af19-7ec115fd9e51",
+        "done": 0
+    }
+]
