@@ -39,6 +39,7 @@ ipcRenderer.on("servicesBikes:response:today", (event, servicesBikesX) => {
             const inputCheckBox = document.createElement("input");
             inputCheckBox.type = "checkbox";
             inputCheckBox.className = "inputCheckBox"
+            inputCheckBox.id = "idinputCheckBox"+x;
             const labelCheckBox = document.createElement("label");
             labelCheckBox.for = "test";
             labelCheckBox.className = "labelServices";
