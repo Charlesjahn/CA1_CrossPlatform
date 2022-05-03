@@ -1,18 +1,50 @@
 [
     {
-        "username": "bekardi@mail.com",
-        "password": "qwerty412"
+        "firstname": "Zeynep",
+        "password": "Qwerty412!",
+        "surname": "Amanbay",
+        "username": "znp"
     },
     {
-        "username": "CFJahn@mail.com",
-        "password": "pass1234"
+        "firstname": "Bekezhan",
+        "password": "Qwerty412",
+        "surname": "Abdykarimov",
+        "username": "by_beka"
     },
     {
-        "username": "AlbqLuiza@mail.com",
-        "password": "New3456"
+        "firstname": "Chingiz",
+        "password": "Qwerty412!",
+        "surname": "Abdykarimov",
+        "username": "china_01"
     },
     {
-        "username": "Ywr@mail.com",
-        "password": "pass123!"
+        "firstname": "Peter",
+        "password": "Qwerty412!",
+        "surname": "Parker",
+        "username": "p_parker"
+    },
+    {
+        "firstname": "Charles",
+        "password": "Qwerty412!",
+        "surname": "Oliveira",
+        "username": "ufc"
+    },
+    {
+        "firstname": "Amigo",
+        "password": "Pointblank123!",
+        "surname": "Friend",
+        "username": "bekardi1"
+    },
+    {
+        "firstname": "Bekezhan",
+        "password": "Testing123!",
+        "surname": "Abdykarimov",
+        "username": "bekabeka"
+    },
+    {
+        "firstname": "Charles",
+        "password": "Pass1234#",
+        "surname": "Jahn",
+        "username": "CFJahn12"
     }
 ]

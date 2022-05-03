@@ -1,1 +1,164 @@
-[{"bikebrand":"ASD","colouritem":"asdf","dateArr":"2022-04-28","dateSer":"2022-04-28","extrainfo":"szdxfc","model":"Gravel","nameCustomer":"asdxfgg","phoneNumber":"234","price":"23","serviceOrder":"1220428.124502","toDo":["Full Service","9 speed"],"id":"7d850351-2624-4493-a3fd-06d18aaf2a7c","done":0},{"bikebrand":"bmx","colouritem":"black","dateArr":"2022-04-30","dateSer":"2022-04-30","extrainfo":"","model":"BMX","nameCustomer":"Bekezhan Abdykarimov","phoneNumber":"88775426298","price":"540","serviceOrder":"1220430.150633","toDo":["Full Service","Road Brakes","Back","F. Tyre & Tube","30C","Road Brakes","Bearings","New Square"],"id":"c2b65c78-7ac1-4ae5-a0b2-4b7b4a5e7546","done":0},{"bikebrand":"asdfgh","colouritem":"ASDFGH","dateArr":"2022-04-30","dateSer":"2022-04-30","extrainfo":"WERTYU","model":"Gravel","nameCustomer":"wsdfghjk","phoneNumber":"asdfghj","price":"25","serviceOrder":"1220430.180146","toDo":["Full Service","11-30","34/50","Service"],"id":"9691ff52-3308-49fd-8f69-a0d2897f59b0","done":1},{"bikebrand":"asdfg","colouritem":"asdfg","dateArr":"2022-04-30","dateSer":"2022-04-30","extrainfo":"","model":"City","nameCustomer":"asdfg","phoneNumber":"asdfg","price":"23","serviceOrder":"1220430.184723","toDo":["Full Service","9 speed","11-30","Front Tube","32C"],"id":"6ce87f78-b452-400d-95cc-dc614c968c95","done":1}]
+[
+    {
+        "bikebrand": "ASD",
+        "colouritem": "asdf",
+        "dateArr": "2022-04-28",
+        "dateSer": "2022-04-28",
+        "extrainfo": "szdxfc",
+        "model": "Gravel",
+        "nameCustomer": "asdxfgg",
+        "phoneNumber": "234",
+        "price": "23",
+        "serviceOrder": "1220428.124502",
+        "toDo": [
+            "Full Service",
+            "9 speed"
+        ],
+        "id": "7d850351-2624-4493-a3fd-06d18aaf2a7c",
+        "done": 0
+    },
+    {
+        "bikebrand": "bmx",
+        "colouritem": "black",
+        "dateArr": "2022-04-30",
+        "dateSer": "2022-04-30",
+        "extrainfo": "",
+        "model": "BMX",
+        "nameCustomer": "Bekezhan Abdykarimov",
+        "phoneNumber": "88775426298",
+        "price": "540",
+        "serviceOrder": "1220430.150633",
+        "toDo": [
+            "Full Service",
+            "Road Brakes",
+            "Back",
+            "F. Tyre & Tube",
+            "30C",
+            "Road Brakes",
+            "Bearings",
+            "New Square"
+        ],
+        "id": "c2b65c78-7ac1-4ae5-a0b2-4b7b4a5e7546",
+        "done": 0
+    },
+    {
+        "bikebrand": "asdfgh",
+        "colouritem": "ASDFGH",
+        "dateArr": "2022-04-30",
+        "dateSer": "2022-04-30",
+        "extrainfo": "WERTYU",
+        "model": "Gravel",
+        "nameCustomer": "wsdfghjk",
+        "phoneNumber": "asdfghj",
+        "price": "25",
+        "serviceOrder": "1220430.180146",
+        "toDo": [
+            "Full Service",
+            "11-30",
+            "34/50",
+            "Service"
+        ],
+        "id": "9691ff52-3308-49fd-8f69-a0d2897f59b0",
+        "done": 1
+    },
+    {
+        "bikebrand": "asdfg",
+        "colouritem": "asdfg",
+        "dateArr": "2022-04-30",
+        "dateSer": "2022-04-30",
+        "extrainfo": "",
+        "model": "City",
+        "nameCustomer": "asdfg",
+        "phoneNumber": "asdfg",
+        "price": "23",
+        "serviceOrder": "1220430.184723",
+        "toDo": [
+            "Full Service",
+            "9 speed",
+            "11-30",
+            "Front Tube",
+            "32C"
+        ],
+        "id": "6ce87f78-b452-400d-95cc-dc614c968c95",
+        "done": 1
+    },
+    {
+        "bikebrand": "qweqwe",
+        "colouritem": "black",
+        "dateArr": "2022-05-02",
+        "dateSer": "2022-05-02",
+        "extrainfo": "",
+        "model": "Full Suspension",
+        "nameCustomer": "Bekezhan",
+        "phoneNumber": "87474747751",
+        "price": "540",
+        "serviceOrder": "1220502.212406",
+        "toDo": [
+            "Special Service",
+            "Disc Brakes",
+            "Back",
+            "160x6 Bolt"
+        ],
+        "id": "091ae754-b126-4b33-bdc7-3584a7042c58",
+        "done": 1
+    },
+    {
+        "bikebrand": "asdasda",
+        "colouritem": "pink",
+        "dateArr": "2022-05-02",
+        "dateSer": "2022-05-02",
+        "extrainfo": "",
+        "model": "Fixie",
+        "nameCustomer": "Zeynep",
+        "phoneNumber": "870512334",
+        "price": "100",
+        "serviceOrder": "1220502.231928",
+        "toDo": [
+            "Special Service",
+            "Road Brakes",
+            "Back",
+            "Front Tube"
+        ],
+        "id": "eef8e6e8-15c9-46bf-b34a-dc7efe50b21c",
+        "done": 1
+    },
+    {
+        "bikebrand": "qwerewrqwe",
+        "colouritem": "gren",
+        "dateArr": "2022-05-03",
+        "dateSer": "2022-05-03",
+        "extrainfo": "",
+        "model": "Fixie",
+        "nameCustomer": "new client",
+        "phoneNumber": "123456789",
+        "price": "123",
+        "serviceOrder": "1220503.005620",
+        "toDo": [
+            "Special Service",
+            "Road Brakes",
+            "Back",
+            "32C"
+        ],
+        "id": "535f6e7c-a684-43d1-baf8-723af1c10b4e",
+        "done": 0
+    },
+    {
+        "bikebrand": "qwertyui",
+        "colouritem": "wqertyjukl",
+        "dateArr": "2022-05-02",
+        "dateSer": "2022-05-02",
+        "extrainfo": "",
+        "model": "City",
+        "nameCustomer": "smtgdqd",
+        "phoneNumber": "12345678",
+        "price": "12312412",
+        "serviceOrder": "1220503.005730",
+        "toDo": [
+            "Special Service",
+            "5/6/7/8 speed",
+            "Dead Battery"
+        ],
+        "id": "2cac481a-b002-4257-90a3-6590881b99fc",
+        "done": 0
+    }
+]
