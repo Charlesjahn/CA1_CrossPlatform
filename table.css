@@ -13,7 +13,7 @@
   }
   
   .content-table thead tr {
-    background-color: #009879;
+    background-image: linear-gradient(to left, rgb(250, 126, 219), rgb(0, 47, 255), rgb(0, 0, 0));
     color: #ffffff;
     text-align: left;
     font-weight: bold;
@@ -33,7 +33,7 @@
   }
   
   .content-table tbody tr:last-of-type {
-    border-bottom: 2px solid #009879;
+    background-image: linear-gradient(to left, rgb(250, 126, 219), rgb(0, 47, 255), rgb(0, 0, 0));
   }
   
   .content-table tbody tr.active-row {
