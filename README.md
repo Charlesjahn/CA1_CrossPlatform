@@ -16,4 +16,9 @@
             2020347
             2020347@student.cct.ie
 
+        Luiza Cavalcanti de Albuquerque Brayner
+            2020309 
+            2020309@student.cct.ie
+
+
         https://docs.google.com/document/d/1YgIqMU1SU472iMCBqBBmLLbAyOrHNWDs3rTmNAvRfnQ/edit?usp=sharing

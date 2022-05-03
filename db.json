@@ -3,7 +3,7 @@
         "bikebrand": "ASD",
         "colouritem": "asdf",
         "dateArr": "2022-04-28",
-        "dateSer": "2022-05-02",
+        "dateSer": "2022-04-28",
         "extrainfo": "szdxfc",
         "model": "Gravel",
         "nameCustomer": "asdxfgg",
@@ -45,7 +45,7 @@
         "bikebrand": "asdfgh",
         "colouritem": "ASDFGH",
         "dateArr": "2022-04-30",
-        "dateSer": "2022-05-02",
+        "dateSer": "2022-04-30",
         "extrainfo": "WERTYU",
         "model": "Gravel",
         "nameCustomer": "wsdfghjk",
@@ -121,6 +121,7 @@
             "New Square"
         ],
         "id": "4e9e81d0-e5b3-4a78-af19-7ec115fd9e51",
+
         "done": 0
     }
 ]
