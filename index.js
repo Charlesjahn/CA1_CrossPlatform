@@ -190,30 +190,6 @@ const menuTemplate = [
         label: "File",
         submenu: [
             {
-                label: "Price List",
-                click() {
-                    createPriceCreator();
-                }
-            },
-            {
-                label: "New Services",
-                click() {
-                    createWindowCreator();
-                }
-            },
-            {
-                label: "All Services",
-                click() {
-                    listWindowCreator();
-                }
-            },
-            {
-                label: "Create User",
-                click() {
-                    createUserCreator();
-                }
-            },
-            {
                 label: "Quit",
                 accelerator: process.platform === "darwin" ? "Command+Q" : "Ctrl+Q",
                 click() {
