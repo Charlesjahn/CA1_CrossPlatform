@@ -45,7 +45,7 @@
         "bikebrand": "asdfgh",
         "colouritem": "ASDFGH",
         "dateArr": "2022-04-30",
-        "dateSer": "2022-04-30",
+        "dateSer": "2022-05-03",
         "extrainfo": "WERTYU",
         "model": "Gravel",
         "nameCustomer": "wsdfghjk",
@@ -65,7 +65,7 @@
         "bikebrand": "asdfg",
         "colouritem": "asdfg",
         "dateArr": "2022-04-30",
-        "dateSer": "2022-04-30",
+        "dateSer": "2022-05-03",
         "extrainfo": "",
         "model": "City",
         "nameCustomer": "asdfg",
@@ -86,7 +86,7 @@
         "bikebrand": "Trek",
         "colouritem": "Blue",
         "dateArr": "2022-05-01",
-        "dateSer": "2022-05-02",
+        "dateSer": "2022-05-03",
         "extrainfo": "",
         "model": "Hard Tail",
         "nameCustomer": "Luiza",
@@ -109,7 +109,7 @@
         "bikebrand": "test2.1",
         "colouritem": "test2.3",
         "dateArr": "2022-05-02",
-        "dateSer": "2022-05-02",
+        "dateSer": "2022-05-03",
         "extrainfo": "asdfg",
         "model": "BMX",
         "nameCustomer": "test2",
@@ -121,7 +121,6 @@
             "New Square"
         ],
         "id": "4e9e81d0-e5b3-4a78-af19-7ec115fd9e51",
-
         "done": 0
     }
 ]
