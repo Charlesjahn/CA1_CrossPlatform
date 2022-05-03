@@ -1,10 +1,1 @@
-[
-    {
-        "username": "bekardi@mail.com",
-        "password": "qwerty412"
-    },
-    {
-        "username": "CFJahn@mail.com",
-        "password": "pass1234"
-    }
-]
+[{"firstname":"Zeynep","password":"Qwerty412!","surname":"Amanbay","username":"znp"},{"firstname":"Bekezhan","password":"Qwerty412","surname":"Abdykarimov","username":"by_beka"},{"firstname":"Chingiz","password":"Qwerty412!","surname":"Abdykarimov","username":"china_01"},{"firstname":"Peter","password":"Qwerty412!","surname":"Parker","username":"p_parker"},{"firstname":"Charles","password":"Qwerty412!","surname":"Oliveira","username":"ufc"},{"firstname":"Amigo","password":"Pointblank123!","surname":"Friend","username":"bekardi1"},{"firstname":"Bekezhan","password":"Testing123!","surname":"Abdykarimov","username":"bekabeka"}]

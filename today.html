@@ -11,7 +11,7 @@
             <a class="content" onclick="makeNewServices()">New Services</a>
             <a class="content" onclick="showAllServices()">All Services</a>
             <a class="content" onclick="showThePriceList()">Price List</a>
-            <a class="content" onclick="createNewUser()">New Account</a>
+            <a class="" id="createNewAccount" onclick="createNewUser()">Create New Account</a>
             <a id="logOutBtn" class="content" onclick="logOutFunc()">Log out</a>
         </div>
     </header>
@@ -32,8 +32,11 @@
                     <i class="error error-icon fas fa-exclamation-circle"></i>
                 </div>
                 <div class="error error-txt">Password can't be blank</div>
+                <div><br>Show Password
+                <input style="min-width: 0;" type="checkbox" onclick="myFunction()">
+                </div>
             </div>
-            <div class="pass-txt"><a href="#">Forgot password?</a></div>
+            <!-- <div class="pass-txt"><a href="#">Forgot password?</a></div> -->
             <input type="submit">
         </form>
 

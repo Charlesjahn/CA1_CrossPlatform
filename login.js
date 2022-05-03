@@ -1,9 +1,12 @@
+
 const loginDiv = document.getElementById("loginDiv"); //login Div
 const form = document.getElementById("login");
 eField = form.querySelector(".email"),
   eInput = eField.querySelector("input"), //username input
   pField = form.querySelector(".password"),
   pInput = pField.querySelector("input"); //password input
+
+let newAccountNav = document.getElementById("createNewAccount");
 
 let content = document.querySelectorAll(".content");
 hideContent();
@@ -14,11 +17,22 @@ function hideContent() {
   for (let i = 0; i < content.length; i++) {
     content[i].style.visibility = "hidden";
   }
+  newAccountNav.style.display = 'inline-block';
 };
 
 function unhideContent() {
   for (let i = 0; i < content.length; i++) {
     content[i].style.visibility = "visible";
+  }
+  newAccountNav.style.display = 'none';
+};
+//unhide the password when user type it 
+function myFunction() {
+  let x = pInput;
+  if (x.type === "password") {
+    x.type = "text";
+  } else {
+    x.type = "password";
   }
 };
 
@@ -34,16 +48,19 @@ fetch(url)
   });
 
 let loginSuccess = false;
+let username;
+let password;
 
 form.onsubmit = (e) => {
   e.preventDefault();
-  let username = eInput.value;
-  let password = pInput.value;
+  username = eInput.value;
+  password = pInput.value;
   console.log("worrking");
   lookForUser(username, password);
   if (loginSuccess === true) {
     loginDiv.style.display = "none";
     unhideContent();
+
   }
 };
 //function checks the user input and if the user exists, password and username are right then login is successful
@@ -66,10 +83,12 @@ function lookForUser(username, password) {
         loginSuccess = true;
 
 
+      } else {
+
+        pField.classList.add("error");
+        pField.classList.remove("valid");
+        console.log('wrong password');
       }
-      pField.classList.add("error");
-      pField.classList.remove("valid");
-      console.log('wrong password');
     } else {
       eField.classList.add("error");
       eField.classList.remove("valid");
@@ -79,13 +98,20 @@ function lookForUser(username, password) {
     console.log(username);
     console.log(allUsers[i].username);
   }
-  loginSuccess = true;
+  //loginSuccess = false;
 }
 
 function logOutFunc() {
 
   loginDiv.style.display = "block";
   hideContent();
+  eInput.value = '';
+  pInput.value = '';
+  eField.classList.remove("error");
+  pField.classList.remove("error");
+  loginSuccess = false;
+  ipcRenderer.send("logOut");
+
 }
 
 // Navbar functions 

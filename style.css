@@ -407,3 +407,6 @@ form input[type="submit"]:hover {
   background-color: #e962f5;
   color: rgb(0, 0, 0);
 }
+#createNewAccount {
+  text-align: right;
+}
