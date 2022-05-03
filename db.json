@@ -21,7 +21,7 @@
         "bikebrand": "bmx",
         "colouritem": "black",
         "dateArr": "2022-04-30",
-        "dateSer": "2022-04-30",
+        "dateSer": "2022-05-02",
         "extrainfo": "",
         "model": "BMX",
         "nameCustomer": "Bekezhan Abdykarimov",
@@ -83,82 +83,45 @@
         "done": 1
     },
     {
-        "bikebrand": "qweqwe",
-        "colouritem": "black",
-        "dateArr": "2022-05-02",
+        "bikebrand": "Trek",
+        "colouritem": "Blue",
+        "dateArr": "2022-05-01",
         "dateSer": "2022-05-02",
         "extrainfo": "",
-        "model": "Full Suspension",
-        "nameCustomer": "Bekezhan",
-        "phoneNumber": "87474747751",
-        "price": "540",
-        "serviceOrder": "1220502.212406",
+        "model": "Hard Tail",
+        "nameCustomer": "Luiza",
+        "phoneNumber": "4515215",
+        "price": "225",
+        "serviceOrder": "1220501.210956",
         "toDo": [
-            "Special Service",
+            "Basic service",
+            "12\"",
+            "Front Tube",
+            "26C",
             "Disc Brakes",
-            "Back",
-            "160x6 Bolt"
+            "Service",
+            "Service"
         ],
-        "id": "091ae754-b126-4b33-bdc7-3584a7042c58",
+        "id": "c92a3996-2449-4811-8f9e-b6b3d7194ae1",
         "done": 1
     },
     {
-        "bikebrand": "asdasda",
-        "colouritem": "pink",
+        "bikebrand": "test2.1",
+        "colouritem": "test2.3",
         "dateArr": "2022-05-02",
         "dateSer": "2022-05-02",
-        "extrainfo": "",
-        "model": "Fixie",
-        "nameCustomer": "Zeynep",
-        "phoneNumber": "870512334",
-        "price": "100",
-        "serviceOrder": "1220502.231928",
+        "extrainfo": "asdfg",
+        "model": "BMX",
+        "nameCustomer": "test2",
+        "phoneNumber": "23456789",
+        "price": "23",
+        "serviceOrder": "1220502.215642",
         "toDo": [
-            "Special Service",
-            "Road Brakes",
-            "Back",
-            "Front Tube"
+            "Bearings",
+            "New Square"
         ],
-        "id": "eef8e6e8-15c9-46bf-b34a-dc7efe50b21c",
-        "done": 1
-    },
-    {
-        "bikebrand": "qwerewrqwe",
-        "colouritem": "gren",
-        "dateArr": "2022-05-03",
-        "dateSer": "2022-05-03",
-        "extrainfo": "",
-        "model": "Fixie",
-        "nameCustomer": "new client",
-        "phoneNumber": "123456789",
-        "price": "123",
-        "serviceOrder": "1220503.005620",
-        "toDo": [
-            "Special Service",
-            "Road Brakes",
-            "Back",
-            "32C"
-        ],
-        "id": "535f6e7c-a684-43d1-baf8-723af1c10b4e",
-        "done": 0
-    },
-    {
-        "bikebrand": "qwertyui",
-        "colouritem": "wqertyjukl",
-        "dateArr": "2022-05-02",
-        "dateSer": "2022-05-02",
-        "extrainfo": "",
-        "model": "City",
-        "nameCustomer": "smtgdqd",
-        "phoneNumber": "12345678",
-        "price": "12312412",
-        "serviceOrder": "1220503.005730",
-        "toDo": [
-            "Special Service",
-            "5/6/7/8 speed",
-            "Dead Battery"
-        ],
-        "id": "2cac481a-b002-4257-90a3-6590881b99fc",
+        "id": "4e9e81d0-e5b3-4a78-af19-7ec115fd9e51",
+
         "done": 0
     }
 ]
