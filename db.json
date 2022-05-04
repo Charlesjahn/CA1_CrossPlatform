@@ -122,5 +122,24 @@
         ],
         "id": "4e9e81d0-e5b3-4a78-af19-7ec115fd9e51",
         "done": 0
+    },
+    {
+        "bikebrand": "test",
+        "colouritem": "tes",
+        "dateArr": "2022-05-04",
+        "dateSer": "2022-05-04",
+        "extrainfo": "asdfg",
+        "model": "Hard Tail",
+        "nameCustomer": "test",
+        "phoneNumber": "23456",
+        "price": "23",
+        "serviceOrder": "1220504.195319",
+        "toDo": [
+            "Special Service",
+            "Disc Brakes",
+            "Both"
+        ],
+        "id": "87116b85-3f33-4d26-8dd4-e04646a7b4cd",
+        "done": 0
     }
 ]
