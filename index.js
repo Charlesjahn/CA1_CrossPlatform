@@ -55,14 +55,14 @@ const createPriceCreator = () => {
         webPreferences: {
             nodeIntegration: true
         },
-        
+
         width: 450,
         height: 1000,
         title: "Price List"
-    }); 
-        priceWindow.setMenu(null);
-        priceWindow.loadURL(`file://${__dirname}/price.html`);
-        priceWindow.on("closed", () => (priceWindow = null));
+    });
+    priceWindow.setMenu(null);
+    priceWindow.loadURL(`file://${__dirname}/price.html`);
+    priceWindow.on("closed", () => (priceWindow = null));
 };
 // creating new user account @Bekezhan
 const createUserCreator = () => {
@@ -73,7 +73,7 @@ const createUserCreator = () => {
         min_width: 1000,
         min_height: 1000,
         title: "Creating New User"
-    }); 
+    });
     createWindow.setMenu(null);
     createWindow.loadURL(`file://${__dirname}/user_registration.html`);
     createWindow.on("closed", () => (createWindow = null));
@@ -150,37 +150,45 @@ ipcMain.on("createNewUser:clicked", (e) => {
     createUserCreator();
 })
 
+//User LogOut
+ipcMain.on("logOut", (e) => {
+    const jsonServices = JSON.stringify(allServices);
+    fs.writeFileSync("db.json", jsonServices);
+})
 
+//New User Registration Form @Bekezhan
+let allUsers = [];
+
+fs.readFile("users_db.json", (err, jsonUsers) => {
+    if (!err) {
+        let oldUsers = JSON.parse(jsonUsers);
+        console.log("old " + JSON.stringify(oldUsers));
+        allUsers = oldUsers;
+    };
+});
+
+ipcMain.on("registration:successful", (e, newUser) => {
+    console.log("got newUser")
+    console.log(newUser);
+    allUsers.push(newUser);
+    console.log(allUsers);
+
+    // let newUserJSON = JSON.stringify(newUser);
+
+    fs.writeFileSync('users_db.json', JSON.stringify(allUsers), (err) => {
+        if (err) throw err;
+        console.log("Data written to file");
+    })
+
+
+
+});
 
 
 const menuTemplate = [
     {
         label: "File",
         submenu: [
-            {
-                label: "Price List",
-                click() {
-                    createPriceCreator();
-                }
-            },
-            {
-                label: "New Services",
-                click() {
-                    createWindowCreator();
-                }
-            },
-            {
-                label: "All Services",
-                click() {
-                    listWindowCreator();
-                }
-            },
-            {
-                label: "Create User",
-                click() {
-                    createUserCreator();
-                }
-            },
             {
                 label: "Quit",
                 accelerator: process.platform === "darwin" ? "Command+Q" : "Ctrl+Q",

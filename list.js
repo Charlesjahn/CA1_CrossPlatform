@@ -18,6 +18,8 @@ ipcRenderer.on("servicesBikes:response:list", (event, servicesBikesX) => {
         dateSerParagraph.innerHTML = `Service Date: ${servicesBikes.dateSer}`;
         const priceParagraph = document.createElement("p");
         priceParagraph.innerHTML = `Price: &euro;${servicesBikes.price}`;
+        const bikeParagraph = document.createElement("p");
+        bikeParagraph.innerHTML = `Bike: ${servicesBikes.colouritem} ,${servicesBikes.bikebrand} ,${servicesBikes.model}`;
         const extrainfoParagraph = document.createElement("p");
         extrainfoParagraph.innerHTML = `Extra Info: ${servicesBikes.extrainfo}`;
         const servicesDiv = document.createElement("div");
@@ -31,6 +33,7 @@ ipcRenderer.on("servicesBikes:response:list", (event, servicesBikesX) => {
         servicesBikesDiv.appendChild(dateSerParagraph);
         servicesBikesDiv.appendChild(priceParagraph);
         servicesBikesDiv.appendChild(extrainfoParagraph);
+        servicesBikesDiv.appendChild(bikeParagraph);
         servicesBikesDiv.appendChild(servicesDiv);
         servicesBikesDiv.appendChild(doneParagraph);
         listDiv.append(servicesBikesDiv);

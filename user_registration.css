@@ -1,0 +1,171 @@
+body {
+    width: 100%;
+    height: 100%;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-image: linear-gradient(to left, rgb(250, 126, 219), rgb(0, 47, 255), rgb(0, 0, 0));
+  }
+
+
+/* Firstname, Surname , Username */
+
+form .field .input-area {
+    height: 50px;
+    width: 100%;
+    position: relative;
+  }
+  
+  form .field input:focus,
+  form .field.valid input {
+    border-color: #5372F0;
+  }
+  
+  form .field.shake input,
+  form .field.error input {
+    border-color: #dc3545;
+  }
+  
+  .field .input-area i {
+    position: absolute;
+    top: 50%;
+    font-size: 18px;
+    pointer-events: none;
+    transform: translateY(-50%);
+  }
+  
+  .input-area .icon {
+    left: 15px;
+    color: #bfbfbf;
+    transition: color 0.2s ease;
+  }
+  
+  .input-area .error-icon {
+    right: 15px;
+    color: #dc3545;
+  }
+  
+  form input:focus~.icon,
+  form .field.valid .icon {
+    color: #5372F0;
+  }
+  
+  form .field.shake input:focus~.icon,
+  form .field.error input:focus~.icon {
+    color: #bfbfbf;
+  }
+  
+  form input::placeholder {
+    color: #bfbfbf;
+    font-size: 17px;
+  }
+  
+  form .field .error-txt {
+    color: #dc3545;
+    text-align: center;
+    margin-top: 5px;
+  }
+  
+  form .field .error {
+    display: none;
+  }
+  
+  form .field.shake .error,
+  form .field.error .error {
+    display: block;
+  }
+  
+  form .pass-txt {
+    text-align: center;
+    margin-top: -10px;
+  }
+  
+  form input[type="submit"] {
+    height: 50px;
+    margin-top: 30px;
+    color: #fff;
+    padding: 0;
+    border: none;
+    background: #5372F0;
+    cursor: pointer;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+  }
+  
+  form input[type="submit"]:hover {
+    background: #2c52ed;
+  }
+
+/*-- Password */
+
+.tasks {
+    margin: 90px 110px;
+}
+
+#ex1 {
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-sizing: content-box;
+    border-width: 10px;
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 50px;
+}
+
+.registrationInput{
+    border-radius: 50px;
+    width: 50%;
+    padding: 12px;
+    margin-top: 6px;
+    margin-bottom: 16px;
+}
+
+div #btnCheck {
+    text-align: center;
+    border-radius: 50px;
+    border-width: 5px;
+    width: 40%;
+    padding: 12px;
+    background-color: white;
+    color: #222831;
+    font-weight: bold;
+    font-size: 20px;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#registrationForm {
+    padding: 20px;
+}
+
+#checksField {
+    display: none;
+    background: #f1f1f1;
+    color: #000;
+    position: relative;
+    padding: 20px;
+    margin-top: 10px;
+}
+
+#checksField p {
+    padding: 10px 35px;
+    font-size: 18px;
+}
+
+.correct {
+    color: green;
+}
+
+.correct:before {
+    position: relative;
+    left: -35px;
+    content: "✔";
+}
+
+.wrong {
+    color: red;
+}
+
+.wrong:before {
+    position: relative;
+    left: -35px;
+    content: "✖";
+}
+
+ 
