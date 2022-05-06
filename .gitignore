@@ -1,4 +1,8 @@
 CA_Bike_Service_booking-win32-x64
 node_modules
-db.json
-login.html
+CA1_Bikes_services-linux-arm64
+CA1_Bikes_services-linux-armv7l
+CA1_Bikes_services-linux-ia32
+CA1_Bikes_services-linux-x64
+CA1_Bikes_services-win32-ia32
+CA1_Bikes_services-win32-x64
