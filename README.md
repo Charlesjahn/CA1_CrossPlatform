@@ -24,9 +24,9 @@
             2020309 
             2020309@student.cct.ie
                 Tasks
-                    1)Login page
-                    2)Sign page
-                    3)
+                    1)Report
+                    2)Wireframe
+                    3)Sketch
 
         Yuri Mendonca Ribeiro 
             2020347
