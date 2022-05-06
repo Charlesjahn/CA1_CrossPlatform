@@ -47,4 +47,4 @@
             • electron-packager . --platform=darwin --arch=x64 CA_Bike_Service_booking
         
         ‒ If you would like to create the executable for all three major operating systems (Windows,Linux and Mac), then used the above command will be changed.
-            • electron-packager . --platform=all --arch=all TutorialWeek7All
+            • electron-packager . --platform=all --arch=all CA_Bike_Service_booking
