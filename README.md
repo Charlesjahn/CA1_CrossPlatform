@@ -19,6 +19,7 @@
                     1)Booking services
                     2)All booking
                     3)Today Booking
+                    4)Video
 
         Luiza Cavalcanti de Albuquerque Brayner
             2020309 
