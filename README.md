@@ -38,7 +38,6 @@
                     3)Price List
 
 
-        https://docs.google.com/document/d/1YgIqMU1SU472iMCBqBBmLLbAyOrHNWDs3rTmNAvRfnQ/edit?usp=sharing
 
         For Windows 10
             • electron-packager . --platform=win32 --arch=x64 CA_Bike_Service_booking 
